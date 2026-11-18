@@ -1,0 +1,136 @@
+{
+  "criado_em_utc": "2026-11-11T17:40:09.655624+00:00",
+  "observacao": "Fontes publicas copiadas do computador; nao houve releitura serial nem alteracao de firmware. Evidencias exportadas sem .env/config.py/imagens flash. Nao substituir banco ativo por estes arquivos.",
+  "arquivos": [
+    {
+      "caminho": "amostras_20261111_133700.jsonl",
+      "bytes": 14601,
+      "sha256": "46ab906ba97a98441c3a16431ad9f801d9155a8f9bd3c8072824afc6ff89c5e7"
+    },
+    {
+      "caminho": "amostras_20261111_141604.jsonl",
+      "bytes": 14601,
+      "sha256": "e26c73a84884023af0b9344a78483dc2f124d33931e6c46e28344154c77e4147"
+    },
+    {
+      "caminho": "amostras_20261111_142031.jsonl",
+      "bytes": 14293,
+      "sha256": "a57630a476150f8e5a27c03d1853ee5f4b993bc4b8db01bfb80bece931fcad9e"
+    },
+    {
+      "caminho": "contexto_20261111_141604.json",
+      "bytes": 882,
+      "sha256": "af6a8e4cbdb06515f93f537dc399e313bb0001989ccc6871449cf2a7274aabe5"
+    },
+    {
+      "caminho": "contexto_20261111_142031.json",
+      "bytes": 8490,
+      "sha256": "1215569599a5ce05126843dbbd2900fdb49a115661edf13675ea33a08b2f7e25"
+    },
+    {
+      "caminho": "continuidade_banco.json",
+      "bytes": 75708,
+      "sha256": "292706996c02a3bb5be707a157b9147be76b1ba12b603abc1b078d2b89555202"
+    },
+    {
+      "caminho": "fontes/backend/database.py",
+      "bytes": 2288,
+      "sha256": "f7270c605770e0d56600d79f03a08e3d6c429d298719509bc796c7a7ccb78580"
+    },
+    {
+      "caminho": "fontes/backend/main.py",
+      "bytes": 3211,
+      "sha256": "f56f5b52b5c57f76876dec3c1c9b43becba6956afe954c0a93e0e6d6fee7b2d2"
+    },
+    {
+      "caminho": "fontes/backend/schemas.py",
+      "bytes": 1396,
+      "sha256": "95b7c663237482782b2a04fd2a1b3ac165abf4e5b030e7dbbee758d8683f5fbe"
+    },
+    {
+      "caminho": "fontes/firmware/api_client.py",
+      "bytes": 1961,
+      "sha256": "6f36172656a5ff548e53fe6015a62e53b92dc4ad8159c0866f526a07e4e6b7e7"
+    },
+    {
+      "caminho": "fontes/firmware/main.py",
+      "bytes": 1169,
+      "sha256": "ccc106aecc18b967f339b06aed0fb83ae1f88701537b6a5ff37fde1e28287f2b"
+    },
+    {
+      "caminho": "fontes/firmware/sensors/bmp280.py",
+      "bytes": 5467,
+      "sha256": "4f9af2324fce224698d6cbdf1efb21d78b030b7ae42f5bf1ffb196961e37115f"
+    },
+    {
+      "caminho": "fontes/firmware/sensors/dht22.py",
+      "bytes": 763,
+      "sha256": "4f53ff964fba5de6ba4a76dd6d4d3c5500788527233bf077f0fbb85b9defa3a1"
+    },
+    {
+      "caminho": "fontes/firmware/sensors/ldr.py",
+      "bytes": 247,
+      "sha256": "a21e009a89c705073b37e44d87f32dc89c41de21d9f5064e50c572687d7dce7f"
+    },
+    {
+      "caminho": "fontes/firmware/sensors/mq135.py",
+      "bytes": 397,
+      "sha256": "a3f843e2a119d354765d5cadc696636741e5c0f7d443f2a9dc01936345c992a1"
+    },
+    {
+      "caminho": "fontes/firmware/wifi.py",
+      "bytes": 482,
+      "sha256": "2104f87690705f93f8b0efe7f11fb6a200d59ae7a598790f69a24c5df463e8c2"
+    },
+    {
+      "caminho": "fontes/frontend/app.js",
+      "bytes": 3446,
+      "sha256": "7b1b0d21a949c8154e742ddf6d44f006ea73263bf54220da576e3bf62070dc87"
+    },
+    {
+      "caminho": "fontes/frontend/index.html",
+      "bytes": 2902,
+      "sha256": "c4c0fae542032cad65719e3ac0585f4c4d5c8255af34fc753d27eb246ad4aede"
+    },
+    {
+      "caminho": "fontes/frontend/style.css",
+      "bytes": 2202,
+      "sha256": "d94596b6452ef1dd1a5778374ff0537783890b2feda7afea6b4a5f5203455d17"
+    },
+    {
+      "caminho": "fontes/requirements-dev.txt",
+      "bytes": 70,
+      "sha256": "d62828843136678bd16970bb55d4e36faca279d59624d836137d49b6d2429977"
+    },
+    {
+      "caminho": "fontes/requirements.txt",
+      "bytes": 57,
+      "sha256": "7ce2ab85b8d20bac7c9660a67bff309c6d678fb7accec572cbcdd06e7dbbd081"
+    },
+    {
+      "caminho": "fontes/scripts/monitorar_bmp280.py",
+      "bytes": 8758,
+      "sha256": "923add613cf4bea14913e9da5d22fe211dbb43f2265a0bda546a2d76f4d6f0f3"
+    },
+    {
+      "caminho": "leituras_desde_recuperacao.csv",
+      "bytes": 18960,
+      "sha256": "0aa58aeb061a1111b92b38add93b1e2c40f618faee702344b43a940aad90efd1"
+    },
+    {
+      "caminho": "painel_142705.png",
+      "bytes": 30737,
+      "sha256": "6bb88a1ea83495064305f3109fee847e0d7583d58cc729e6387bff12d6dc1c26"
+    },
+    {
+      "caminho": "resumos_monitores.json",
+      "bytes": 2664,
+      "sha256": "a158e10ea02d5f5455a62463fca51711c810e675f01a8a15183eb19a6bd6ad87"
+    },
+    {
+      "caminho": "README.md",
+      "bytes": 2947,
+      "sha256": "4184e0597dcdf75f7593ef088f070058a65d7ee00da4755c15f29df18723c53b"
+    }
+  ]
+}

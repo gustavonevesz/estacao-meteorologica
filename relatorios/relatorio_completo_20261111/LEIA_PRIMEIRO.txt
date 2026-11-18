@@ -1,0 +1,19 @@
+RELATORIO COMPLETO DO PROJETO - ESTACAO METEOROLOGICA
+
+Extraia o arquivo RAR antes de abrir o conteudo.
+
+1. RELATORIO_COMPLETO_DO_PROJETO.pdf: versao pronta para leitura e impressao.
+2. RELATORIO_COMPLETO_DO_PROJETO.html: versao com sumario navegavel no navegador.
+3. RELATORIO_COMPLETO_DO_PROJETO.md: texto editavel.
+4. ANEXOS: catalogo, dados, diagramas e documentos de apoio.
+
+Corte estatistico: ID4564, 11/11/2026, 20:16:07 UTC-3.
+O relatorio e historico; novos dados continuam chegando ao sistema.
+Os documentos antigos nos anexos registram versoes anteriores.
+O catalogo tecnico tambem e incorporado ao PDF/HTML.
+
+Este pacote e documental. O projeto ativo fica em:
+C:\Users\Windows\computer-science\estacao-meteorologica
+
+Nao substituir o banco atual por arquivos deste pacote.
+Configuracoes privadas, senhas, chaves e imagens de flash nao acompanham a entrega.

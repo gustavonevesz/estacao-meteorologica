@@ -1,0 +1,6 @@
+WIFI_SSID = "SUA_REDE"
+WIFI_PASSWORD = "SUA_SENHA"
+API_URL = "http://192.168.1.100:8000/api/leituras"
+API_KEY = "troque-por-uma-chave"
+ESTACAO_ID = "esp32-01"
+INTERVALO_SEGUNDOS = 5

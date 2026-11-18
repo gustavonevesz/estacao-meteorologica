@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Observatório · Estação meteorológica</title>
+  <link rel="icon" type="image/svg+xml" href="/static/favicon.svg?v=20261111-rosa-dos-ventos">
+  <link rel="stylesheet" href="/static/style.css">
+  <script src="/static/app.js?v=20261111-estacao-unica" defer></script>
+</head>
+<body>
+  <main>
+    <header>
+      <div>
+        <span class="eyebrow">PROJETO · ESP32</span>
+        <h1>Observatório</h1>
+        <p>Estação meteorológica · monitoramento ambiental</p>
+      </div>
+      <span id="status" role="status">Conectando…</span>
+    </header>
+
+    <section class="toolbar" aria-label="Última atualização">
+      <span id="horario">Aguardando primeira leitura</span>
+    </section>
+
+    <section class="cards" aria-label="Últimas medições">
+      <article>
+        <span>Temperatura · DHT22</span>
+        <strong id="temperatura">—</strong>
+        <small>Graus Celsius</small>
+      </article>
+      <article>
+        <span>Umidade relativa</span>
+        <strong id="umidade">—</strong>
+        <small>Percentual · DHT22</small>
+      </article>
+      <article>
+        <span>Pressão atmosférica</span>
+        <strong id="pressao">—</strong>
+        <small>hPa · BMP280</small>
+      </article>
+      <article>
+        <span>Luminosidade</span>
+        <strong id="estado">—</strong>
+        <small id="luz">Saída digital · LDR</small>
+      </article>
+      <article>
+        <span>Sensor de gás · MQ-135</span>
+        <strong id="gas">—</strong>
+        <small>ADC bruto · 0 a 4095</small>
+      </article>
+      <article>
+        <span>Temperatura · BMP280</span>
+        <strong id="temperatura_bmp">—</strong>
+        <small id="bmp">Aguardando sensor</small>
+      </article>
+    </section>
+
+    <section class="history">
+      <div class="section-title">
+        <div>
+          <h2>Histórico de leituras</h2>
+          <p>Últimos 100 registros da estação meteorológica</p>
+        </div>
+        <button id="exportar" disabled>Exportar CSV</button>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Recebido em</th>
+              <th>Temp. °C</th>
+              <th>Umidade %</th>
+              <th>Pressão hPa</th>
+              <th>Luz</th>
+              <th>Gás ADC</th>
+              <th>BMP °C</th>
+            </tr>
+          </thead>
+          <tbody id="historico"></tbody>
+        </table>
+      </div>
+      <p id="vazio">Nenhuma leitura disponível.</p>
+    </section>
+
+    <footer>Atualização a cada 5 segundos · Horários locais do navegador · MQ-135 sem conversão para ppm</footer>
+  </main>
+</body>
+</html>

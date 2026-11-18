@@ -1,0 +1,1343 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Relatório Completo | Estação Meteorológica</title><style>
+:root{--green:#183b38;--muted:#5d746c;--line:#d6e2d5;--paper:#fff;--sage:#edf3e9;--gold:#c99c42}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#eff3ed;color:#203b36;font-family:'Segoe UI',Arial,sans-serif;font-size:16px;line-height:1.65}
+.sheet{max-width:980px;margin:32px auto;background:white;padding:64px 74px;box-shadow:0 8px 36px #183b3810}
+.cover{min-height:850px;display:flex;flex-direction:column;justify-content:space-between;border-top:9px solid var(--green);padding:36px 0 38px}
+.brand{display:flex;align-items:center;justify-content:space-between;gap:20px}.brand img{width:150px;height:150px}.eyebrow{font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--muted)}
+.cover h1{font-size:60px;line-height:1.05;font-weight:650;letter-spacing:-2px;margin:25px 0;color:var(--green)}.cover .subtitle{font-size:23px;line-height:1.4;max-width:650px}.cover-meta{border-top:1px solid var(--line);padding-top:24px;color:var(--muted);font-size:14px}
+.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:35px 0}.metric{padding:20px;border:1px solid var(--line);border-radius:10px;background:var(--sage)}.metric strong{display:block;font-size:34px;font-weight:600}.metric span{font-size:12px;color:var(--muted)}
+nav{margin:48px 0;padding:28px;background:var(--sage);border:1px solid var(--line);border-radius:12px}nav h2{margin-top:0}nav ol{columns:2;column-gap:32px;padding-left:0;list-style:none}nav li{break-inside:avoid;margin:0 0 8px;font-size:14px}nav a{text-decoration:none}
+a{color:#286951;text-decoration:underline;text-underline-offset:2px}h1,h2,h3,h4{color:var(--green);line-height:1.25}article>h1{font-size:35px;margin:36px 0 16px}h2{margin:52px 0 20px;font-size:27px;border-bottom:2px solid var(--line);padding-bottom:12px}h3{font-size:20px;margin:32px 0 12px}h4{font-size:17px;margin:24px 0 8px}p{margin:12px 0}strong{font-weight:650}
+table{border-collapse:collapse;width:100%;font-size:13px;line-height:1.45;margin:20px 0}th,td{padding:10px 11px;text-align:left;vertical-align:top;border:1px solid var(--line);overflow-wrap:anywhere}th{background:#e9f0e6;color:var(--green);font-weight:650}tbody tr:nth-child(even){background:#f8faf6}
+pre{background:#f1f5ee;border:1px solid var(--line);border-left:4px solid #658e7a;border-radius:5px;padding:15px;font-size:12px;line-height:1.5;overflow-wrap:anywhere;white-space:pre-wrap;word-break:break-word}code{font-family:Consolas,'Courier New',monospace;font-size:.9em;overflow-wrap:anywhere}p code,td code,li code{background:#f0f4ec;padding:1px 4px;border-radius:3px}
+img{max-width:100%;height:auto}article img{display:block;margin:25px auto;border:1px solid var(--line);border-radius:8px;padding:8px;background:#fff}blockquote{border-left:4px solid var(--gold);margin:20px 0;padding:2px 20px;color:var(--muted)}hr{border:0;border-top:1px solid var(--line);margin:38px 0}li{margin:5px 0}.closing{margin-top:45px;padding-top:20px;border-top:1px solid var(--line);color:var(--muted);font-size:12px}
+@media(max-width:800px){.sheet{margin:0;padding:26px}.cover{min-height:700px}.cover h1{font-size:43px}.brand img{width:110px;height:110px}nav ol{columns:1}.metrics{gap:8px}.metric{padding:12px}}
+@page{size:A4;margin:17mm 16mm 19mm;@bottom-left{content:'Estacao Meteorologica | 11/11/2026';font-family:Arial;font-size:8pt;color:#66796e}@bottom-right{content:counter(page);font-family:Arial;font-size:8pt;color:#66796e}}
+@media print{*{-webkit-print-color-adjust:exact;print-color-adjust:exact}html{scroll-behavior:auto}body{background:white;font-size:10.3pt;line-height:1.5}.sheet{margin:0;padding:0;max-width:none;box-shadow:none}.cover{height:244mm;min-height:0;break-after:page;padding-top:12mm}.cover h1{font-size:43pt;line-height:1.08}.cover .subtitle{font-size:17pt}.cover-meta{font-size:9.5pt}.brand img{width:110px;height:110px}.eyebrow{font-size:9pt}.metrics{margin:24px 0}.metric{padding:12px}.metric strong{font-size:24pt}.metric span{font-size:8.5pt}nav{margin:0;padding:7mm;border-radius:0;break-after:page}nav h2{break-before:auto;font-size:21pt;margin-top:0}nav li{font-size:9pt;line-height:1.35;margin-bottom:6pt}article>h1{font-size:27pt}article h2{break-before:page;font-size:19pt;margin-top:0;padding-top:0;border-bottom:1px solid var(--line);break-after:avoid}article h3{font-size:13pt;break-after:avoid}article h4{font-size:11pt;break-after:avoid}p{orphans:3;widows:3}table{font-size:8.8pt;line-height:1.35;break-inside:auto}th,td{padding:6pt 6pt}thead{display:table-header-group}tr{break-inside:avoid}pre{font-size:8.7pt;line-height:1.4;break-inside:auto;padding:9pt}article img{max-height:190mm;max-width:100%;object-fit:contain;break-inside:avoid}a{color:#183b38;text-decoration:none}.closing{font-size:8pt}}
+</style></head><body><main class="sheet"><section class="cover"><div><div class="brand"><div><div class="eyebrow">Projeto acadêmico · relatório técnico</div><p>Versão consolidada · 11 de novembro de 2026</p></div><img src="ANEXOS/ROSA_DOS_VENTOS.svg" alt="Rosa dos ventos"></div><h1>Estação<br>Meteorológica</h1><p class="subtitle">Do programa original no Thonny à integração ESP32, FastAPI, SQLite e painel web.</p><p>Desenvolvimento, investigação do BMP280, operação e entrega do projeto.</p><div class="metrics"><div class="metric"><strong>4</strong><span>tipos de sensor integrados</span></div><div class="metric"><strong>4.564</strong><span>registros no corte documental</span></div><div class="metric"><strong>46</strong><span>casos de teste do projeto</span></div></div></div><div class="cover-meta"><p><strong>ESP32 · MicroPython · FastAPI · SQLite · HTML/CSS/JavaScript</strong></p><p>Corte estatístico: ID4564, em 11/11/2026, 20:16:07 (UTC−3).</p><p>Documento baseado no código, histórico, logs e banco. Os resultados comprovados são separados de hipóteses e limitações.</p></div></section><nav aria-label="Sumario"><h2>Sumário</h2><ol><li><a href="#1-apresentacao-e-resultado-alcancado">1. Apresentação e resultado alcançado</a></li>
+<li><a href="#2-fontes-metodo-e-limites-do-historico">2. Fontes, método e limites do histórico</a></li>
+<li><a href="#3-situacao-inicial-e-objetivos-da-reorganizacao">3. Situação inicial e objetivos da reorganização</a></li>
+<li><a href="#4-linha-do-tempo-consolidada">4. Linha do tempo consolidada</a></li>
+<li><a href="#5-arquitetura-atual-e-separacao-dos-ambientes">5. Arquitetura atual e separação dos ambientes</a></li>
+<li><a href="#6-modularizacao-do-firmware">6. Modularização do firmware</a></li>
+<li><a href="#7-sensores-pinagem-e-significado-dos-dados">7. Sensores, pinagem e significado dos dados</a></li>
+<li><a href="#8-api-fastapi-e-autenticacao">8. API FastAPI e autenticação</a></li>
+<li><a href="#9-persistencia-sqlite-e-contrato-dos-campos">9. Persistência SQLite e contrato dos campos</a></li>
+<li><a href="#10-painel-e-evolucao-da-experiencia-de-uso">10. Painel e evolução da experiência de uso</a></li>
+<li><a href="#11-problemas-de-execucao-encontrados-e-correcoes">11. Problemas de execução encontrados e correções</a></li>
+<li><a href="#12-investigacao-fisica-e-digital-do-bmp280">12. Investigação física e digital do BMP280</a></li>
+<li><a href="#13-teste-independente-arduino-e-restauracao">13. Teste independente Arduino e restauração</a></li>
+<li><a href="#14-recuperacao-do-bmp-janelas-evidencias-e-incerteza-causal">14. Recuperação do BMP: janelas, evidências e incerteza causal</a></li>
+<li><a href="#15-atalho-windows-e-inicializacao-automatica-por-clique">15. Atalho Windows e inicialização automática por clique</a></li>
+<li><a href="#16-organizacao-migracao-e-limpeza-da-area-de-trabalho">16. Organização, migração e limpeza da área de trabalho</a></li>
+<li><a href="#17-testes-de-software-e-verificacoes-reais">17. Testes de software e verificações reais</a></li>
+<li><a href="#18-situacao-dos-dados-no-corte-final">18. Situação dos dados no corte final</a></li>
+<li><a href="#19-como-executar-e-manter-a-versao-entregue">19. Como executar e manter a versão entregue</a></li>
+<li><a href="#20-limitacoes-decisoes-e-trabalhos-futuros">20. Limitações, decisões e trabalhos futuros</a></li>
+<li><a href="#21-conteudo-da-entrega-documental">21. Conteúdo da entrega documental</a></li>
+<li><a href="#22-referencias-tecnicas-e-documentais">22. Referências técnicas e documentais</a></li>
+<li><a href="#23-catalogo-tecnico-dos-arquivos">23. Catálogo técnico dos arquivos</a></li></ol></nav><article><h2 id="1-apresentacao-e-resultado-alcancado">1. Apresentação e resultado alcançado</h2>
+<p>O projeto começou com um programa principal para ESP32 e a necessidade de organizar o trabalho para a faculdade. Além de separar cada sensor em seu próprio arquivo, o grupo precisava visualizar as medidas em uma interface, disponibilizar uma API com FastAPI e preservar os dados em banco. O trabalho passou a envolver tanto o software do computador quanto o programa da placa e a investigação da montagem física.</p>
+<p>A solução final distribui essas responsabilidades. O ESP32 executa MicroPython, lê os sensores e envia JSON pela rede. O computador executa FastAPI e registra os dados em SQLite. O navegador consulta a API e apresenta as últimas medidas e o histórico. O VS Code é o ambiente de edição; ele não substitui o firmware da placa nem precisa permanecer aberto para o servidor funcionar.</p>
+<p>No corte deste relatório, o banco continha <strong>4.564 registros</strong>, todos associados a <code>esp32-01</code>. Em <strong>1.188</strong> deles havia medição BMP validada; em <strong>3.376</strong>, os campos BMP estavam nulos. Os demais tipos de sensor tinham seus campos preenchidos nos registros recebidos. Isso descreve a disponibilidade dos dados armazenados, não uma certificação da exatidão física dos instrumentos.</p>
+<p>A partir do registro <strong>3443</strong>, o banco contém <strong>1.122 registros recebidos com BMP validado</strong>, sem novo registro BMP nulo até o corte. Entretanto, houve períodos sem recepção. A maior lacuna foi superior a três horas. Por isso, a afirmação correta é que todas as amostras recebidas nessa fase tinham BMP válido, e não que a estação coletou ininterruptamente durante todo o período.</p>
+<p>A implementação atual possui um atalho <strong>Estação Meteorológica</strong> na área de trabalho. Ele reconhece uma API da estação já ativa, ou inicia o servidor em um console quando necessário, e abre o painel. O ícone final é uma rosa dos ventos de oito pontas, em branco e verde petróleo, sem letras e com fundo transparente.</p>
+<h2 id="2-fontes-metodo-e-limites-do-historico">2. Fontes, método e limites do histórico</h2>
+<p>Este documento foi elaborado a partir dos arquivos públicos do projeto, do registro de alterações, dos relatórios técnicos anteriores, dos logs estruturados dos testes, de consultas somente leitura ao banco e das ações registradas durante a sessão. Os dados numéricos de encerramento foram exportados com um limite de ID explícito, para permitir reproduzir os resultados sem misturá-los com novas medidas.</p>
+<p>Nem todas as mensagens antigas possuem data e hora próprias disponíveis. A fase inicial é apresentada pela sequência das solicitações, sem inventar uma data de início. Os marcos de 04/11 e 10/11 seguem o <code>CHANGELOG.md</code>. Parte da revisão de 04/11 foi realizada em outro computador e sem o ESP32; ela não deve ser descrita como um ensaio físico naquela máquina.</p>
+<p>Três módulos vendidos como sensores da família “280” foram discutidos e trocados ao longo da investigação. Em vários momentos, sua identificação dependia do que o usuário informava. O banco não registra uma etiqueta física, número de série do módulo, calibração ou RAW de cada medida. As atribuições históricas que ficaram incertas permanecem explicitamente incertas neste relatório.</p>
+<p>Não foram realizadas medições com multímetro, osciloscópio ou analisador lógico durante os testes documentados. Um nível digital de GPIO ou uma resposta I²C não substitui medir tensão e forma de onda. Também não houve comparação com barômetro ou termômetro de referência que certificasse a precisão metrológica.</p>
+<p>Credenciais reais, conteúdo de <code>.env</code>, configuração privada da placa, imagens integrais da flash e backups privados não fazem parte deste relatório compartilhável. Exemplos de configuração usam nomes genéricos. Os anexos fornecem dados de sensores e evidências técnicas selecionadas.</p>
+<h2 id="3-situacao-inicial-e-objetivos-da-reorganizacao">3. Situação inicial e objetivos da reorganização</h2>
+<p>O arquivo citado originalmente era <code>main.py.py</code>, usado no Thonny. O programa reunia acesso aos sensores, conexão de rede, rotinas auxiliares e execução contínua. Essa concentração dificultava localizar a origem de uma falha, testar um componente isoladamente e dividir responsabilidades entre os integrantes do grupo.</p>
+<p>Uma análise restrita da estrutura do original confirmou imports de <code>machine</code>, <code>network</code>, <code>socket</code>, <code>time</code>, <code>ujson</code>, <code>dht</code> e <code>struct</code>, uma classe <code>BMP280</code> e a função <code>conectar_bmp</code>. A pinagem original identificada era LDR no GPIO21, DHT22 no GPIO4, MQ-135 no GPIO34 e BMP com SCL18/SDA19. A configuração atual do BMP e do LDR é diferente.</p>
+<p>Os objetivos definidos foram:</p>
+<ol>
+<li>Separar os sensores em arquivos próprios, mantendo um <code>main.py</code> coordenador.</li>
+<li>Migrar a rotina de desenvolvimento para o VS Code sem confundir MicroPython e Python do computador.</li>
+<li>Criar uma API FastAPI para receber e consultar medidas.</li>
+<li>Persistir o histórico em banco de dados.</li>
+<li>Criar um frontend para acompanhar os sensores e exportar os registros.</li>
+<li>Produzir documentação que permitisse ao grupo executar, compreender e manter o sistema.</li>
+</ol>
+<p>Durante o trabalho, foram acrescentados objetivos operacionais: investigar o BMP280, preservar backups antes de testes de firmware, facilitar a inicialização por atalho, personalizar a aparência e preparar entregas compactadas para WhatsApp.</p>
+<h2 id="4-linha-do-tempo-consolidada">4. Linha do tempo consolidada</h2>
+<table>
+<thead>
+<tr>
+<th>Fase</th>
+<th>Trabalho realizado</th>
+<th>Evidência ou resultado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Início, data exata não registrada</td>
+<td>Recebimento do programa do Thonny e definição dos requisitos</td>
+<td>Arquivo principal e solicitações de modularização, API, frontend e banco</td>
+</tr>
+<tr>
+<td>Estruturação</td>
+<td>Separação entre firmware, backend, frontend e scripts</td>
+<td>Organização atual de pastas e funções</td>
+</tr>
+<tr>
+<td>04/11, conforme histórico</td>
+<td>Revisão de autenticação, <code>.env</code>, modelos, mensagens e ambiente</td>
+<td>Correções documentadas; parte feita em outro notebook, sem ensaio físico</td>
+</tr>
+<tr>
+<td>10/11, conforme histórico</td>
+<td>Diagnóstico BMP, validação de dados inválidos e ajustes de pinagem</td>
+<td>LDR18, DHT4, MQ34 e BMP21/22 passaram a ser a referência final</td>
+</tr>
+<tr>
+<td>10/11, 23h56–23h57</td>
+<td>Primeira janela BMP preenchida encontrada no banco atual</td>
+<td>Seis registros, IDs 1828–1833, sem identificação física suficiente do módulo</td>
+</tr>
+<tr>
+<td>11/11, manhã e início da tarde</td>
+<td>Trocas de módulos, testes de comunicação e novas janelas plausíveis</td>
+<td>Períodos curtos com dados intercalados com BMP nulo</td>
+</tr>
+<tr>
+<td>11/11, 12h56</td>
+<td>Teste independente Arduino/Adafruit após backups</td>
+<td>179 amostras com ADC térmico zero; MicroPython restaurado depois</td>
+</tr>
+<tr>
+<td>11/11, 13h37 e 14h16</td>
+<td>Monitores MicroPython com RAW e calibração</td>
+<td>18 tentativas em cada janela, nenhuma BMP válida</td>
+</tr>
+<tr>
+<td>11/11, 14h20min17s</td>
+<td>Retorno das medidas no programa normal</td>
+<td>ID 3443, antes do monitor temporário que começou por volta de 14h20min31s</td>
+</tr>
+<tr>
+<td>11/11, a partir de 14h20min31s</td>
+<td>Captura detalhada da montagem que estava medindo</td>
+<td>18/18 válidas, com RAW e coeficientes contemporâneos</td>
+</tr>
+<tr>
+<td>11/11, até 14h40</td>
+<td>Preservação da primeira referência extensa de recuperação</td>
+<td>217 registros válidos e evidências públicas</td>
+</tr>
+<tr>
+<td>Depois da recuperação</td>
+<td>Atalho, testes de inicialização e identidade visual</td>
+<td>Console automático, reconhecimento de API, navegador e ícones</td>
+</tr>
+<tr>
+<td>Organização final</td>
+<td>Migração para <code>computer-science</code></td>
+<td>Ambiente reconstruído, dados preservados e atalho atualizado</td>
+</tr>
+<tr>
+<td>Limpeza da área de trabalho</td>
+<td>Exclusão das duas pastas antigas autorizadas</td>
+<td>Backup privado completo e envio das pastas antigas à Lixeira</td>
+</tr>
+<tr>
+<td>Estado final deste documento</td>
+<td>Consolidação até o ID 4564</td>
+<td>API respondendo e histórico preservado; ícone de rosa dos ventos</td>
+</tr>
+</tbody>
+</table>
+<p>As datas de alteração de arquivos e a ordem das entradas do changelog não substituem a cronologia das medições. Os horários e IDs apresentados nas tabelas de dados são sustentados pelo banco ou pelos logs correspondentes.</p>
+<h2 id="5-arquitetura-atual-e-separacao-dos-ambientes">5. Arquitetura atual e separação dos ambientes</h2>
+<p><img src="ANEXOS/ARQUITETURA.svg" alt="Arquitetura da estação" /></p>
+<p>O caminho principal é: sensores → ESP32 → Wi-Fi → FastAPI → SQLite → painel. O navegador não lê diretamente os pinos e não precisa estar aberto para o ESP32 enviar. O servidor, por sua vez, precisa estar disponível para aceitar e salvar o POST.</p>
+<table>
+<thead>
+<tr>
+<th>Ambiente</th>
+<th>Responsabilidade</th>
+<th>Exemplos de arquivos</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ESP32 / MicroPython</td>
+<td>Ler pinos e sensores, compensar BMP, conectar e enviar</td>
+<td><code>firmware/main.py</code>, <code>firmware/sensors/</code>, <code>wifi.py</code>, <code>api_client.py</code></td>
+</tr>
+<tr>
+<td>Notebook / Python</td>
+<td>Validar HTTP, autenticar gravações e persistir</td>
+<td><code>backend/main.py</code>, <code>schemas.py</code>, <code>database.py</code></td>
+</tr>
+<tr>
+<td>Navegador</td>
+<td>Consultar, formatar, exibir e exportar</td>
+<td><code>frontend/index.html</code>, <code>app.js</code>, <code>style.css</code></td>
+</tr>
+<tr>
+<td>Windows / operação</td>
+<td>Abrir servidor e navegador e criar atalho</td>
+<td><code>scripts/iniciar_estacao.py</code>, <code>criar_atalho.ps1</code></td>
+</tr>
+<tr>
+<td>Desenvolvimento e manutenção</td>
+<td>Testes, diagnóstico, backup e entrega</td>
+<td><code>tests/</code>, <code>scripts/</code>, <code>diagnosticos/</code></td>
+</tr>
+</tbody>
+</table>
+<p>O firmware não deve ser executado com o Python comum do notebook, porque depende de módulos como <code>machine</code> e <code>dht</code>. O backend não deve ser enviado à placa. O mesmo editor pode trabalhar nos dois conjuntos de arquivos, mas eles são executados em ambientes diferentes.</p>
+<h3 id="ambiente-de-referencia">Ambiente de referência</h3>
+<table>
+<thead>
+<tr>
+<th>Componente</th>
+<th>Versão ou condição registrada</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Python do notebook</td>
+<td>3.14.2</td>
+</tr>
+<tr>
+<td>MicroPython da placa</td>
+<td>1.29.0, observado nos testes da sessão; não relido pela serial para gerar o relatório</td>
+</tr>
+<tr>
+<td>FastAPI / Uvicorn</td>
+<td>0.136.0 / 0.41.0</td>
+</tr>
+<tr>
+<td>python-dotenv</td>
+<td>1.2.2</td>
+</tr>
+<tr>
+<td>pytest / mpremote</td>
+<td>9.0.3 / 1.29.0</td>
+</tr>
+<tr>
+<td>SQLite da biblioteca do notebook</td>
+<td>3.50.4</td>
+</tr>
+<tr>
+<td>Execução principal</td>
+<td>Rede local, porta 8000 e banco em disco</td>
+</tr>
+</tbody>
+</table>
+<h2 id="6-modularizacao-do-firmware">6. Modularização do firmware</h2>
+<p>O <code>main.py</code> atual instancia os quatro tipos de sensor, chama <code>ler()</code> de cada um e reúne os resultados em um dicionário. Os drivers retornam os campos de sua responsabilidade. Essa interface simples permite manter o laço principal legível e substituir ou testar um driver sem reescrever a API.</p>
+<pre><code class="language-text">main()
+  criar os sensores
+  repetir:
+    criar payload com estacao_id
+    ler cada sensor e reunir os campos
+    conectar/reutilizar Wi-Fi
+    enviar JSON à API
+    aguardar o intervalo configurado
+</code></pre>
+<p>Há tratamento de exceção por sensor e no envio. Uma falha do BMP prevista pelo driver retorna seus campos nulos, permitindo enviar as outras medidas. Isso não significa que todo erro arbitrário possa ser ignorado: se uma exceção inesperada impedir campos obrigatórios como LDR/estado/BMP, a API pode rejeitar o payload incompleto com 422.</p>
+<p>O intervalo é <code>max(3, INTERVALO_SEGUNDOS)</code> depois de ler e enviar. Portanto, a configuração de cinco segundos não produz necessariamente recepções em intervalos exatos de cinco segundos. Aquisição, conexão, transmissão e eventuais novas tentativas aumentam o tempo entre registros.</p>
+<p>A conexão Wi-Fi foi separada em <code>conectar()</code>. O cliente HTTP usa socket, JSON e cabeçalho de autenticação, aceita status 201 e fecha a conexão em <code>finally</code>. O ESP32 não passou a depender de um serviço externo para converter a leitura do BMP: a compensação continua no driver da placa.</p>
+<h2 id="7-sensores-pinagem-e-significado-dos-dados">7. Sensores, pinagem e significado dos dados</h2>
+<table>
+<thead>
+<tr>
+<th>Sensor</th>
+<th>Pino final</th>
+<th>Campo</th>
+<th>Unidade ou interpretação</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DHT22</td>
+<td>GPIO4</td>
+<td><code>temperatura</code>, <code>umidade</code></td>
+<td>°C e umidade relativa %</td>
+</tr>
+<tr>
+<td>LDR digital</td>
+<td>GPIO18</td>
+<td><code>luz</code>, <code>estado</code></td>
+<td>0 = Claro; 1 = Escuro</td>
+</tr>
+<tr>
+<td>MQ-135</td>
+<td>GPIO34</td>
+<td><code>gas</code></td>
+<td>Contagem ADC de 0 a 4095</td>
+</tr>
+<tr>
+<td>BMP280</td>
+<td>SDA21 / SCL22</td>
+<td><code>temperatura_bmp</code>, <code>pressao</code></td>
+<td>Temperatura interna em °C e pressão em hPa</td>
+</tr>
+</tbody>
+</table>
+<p>São quatro tipos de sensor. A referência a “três sensores” em parte da conversa dizia respeito aos três módulos BMP examinados, não ao total de tipos presentes na estação.</p>
+<p>O LDR usado é digital e não entrega iluminância em lux. O MQ-135 é lido como ADC bruto; não houve calibração para ppm, índice de qualidade do ar ou identificação de um gás específico. Valores como 200, 400 ou 1200 não devem ser apresentados como concentração calibrada.</p>
+<p>O DHT22 respeita intervalo mínimo de 2,5 segundos no driver e retorna nulos quando sua aquisição falha. Sua temperatura representa outra medição, separada da temperatura interna do BMP. Uma pequena diferença entre os dois valores, isoladamente, não demonstra defeito nem autoriza escolher um offset.</p>
+<h3 id="ligacao-final-de-referencia-do-bmp-de-seis-terminais">Ligação final de referência do BMP de seis terminais</h3>
+<table>
+<thead>
+<tr>
+<th>Terminal do módulo</th>
+<th>Ligação</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>VCC</td>
+<td>3V3 do ESP32</td>
+</tr>
+<tr>
+<td>GND</td>
+<td>GND comum</td>
+</tr>
+<tr>
+<td>SDA / SDI</td>
+<td>GPIO21 / D21</td>
+</tr>
+<tr>
+<td>SCL / SCK</td>
+<td>GPIO22 / D22</td>
+</tr>
+<tr>
+<td>CSB / CS</td>
+<td>3V3, na montagem I²C informada</td>
+</tr>
+<tr>
+<td>SDO</td>
+<td>GND, selecionando endereço 0x76</td>
+</tr>
+</tbody>
+</table>
+<p>As ligações devem seguir as inscrições dos terminais. O pente soldado por outra face muda a aparência e pode inverter visualmente a ordem dos fios. Cores dos jumpers citadas durante trocas não são uma identificação permanente da função elétrica.</p>
+<p>O usuário informou instalar dois resistores de 4,7 kΩ, com faixas amarelo, violeta, vermelho e dourado. Não houve medição instrumental de sua posição final ou resistência equivalente. Os pull-ups previstos ficam entre sinal e 3V3; não são resistores em série. Antes de acrescentar outros, deve-se verificar os já existentes no módulo e na montagem.</p>
+<h2 id="8-api-fastapi-e-autenticacao">8. API FastAPI e autenticação</h2>
+<p>A API tornou explícita a separação entre envio e visualização. O POST valida os dados, exige a chave e salva a leitura. Os GET consultam o banco. A documentação interativa em <code>/docs</code> ajuda a verificar os formatos sem depender do código do frontend.</p>
+<table>
+<thead>
+<tr>
+<th>Método e caminho</th>
+<th>Função</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>GET /</code></td>
+<td>Painel HTML</td>
+</tr>
+<tr>
+<td><code>GET /static/...</code></td>
+<td>JavaScript, CSS e favicon</td>
+</tr>
+<tr>
+<td><code>GET /api/saude</code></td>
+<td>Disponibilidade básica da API</td>
+</tr>
+<tr>
+<td><code>POST /api/leituras</code></td>
+<td>Receber e persistir uma leitura, com <code>X-API-Key</code></td>
+</tr>
+<tr>
+<td><code>GET /api/leituras</code></td>
+<td>Histórico com estação, limite e cursor opcionais</td>
+</tr>
+<tr>
+<td><code>GET /api/leituras/ultima</code></td>
+<td>Último registro, ou 404 quando não há dados</td>
+</tr>
+<tr>
+<td><code>GET /docs</code> e <code>/openapi.json</code></td>
+<td>Documentação e contrato gerados pelo FastAPI</td>
+</tr>
+</tbody>
+</table>
+<p>O parâmetro <code>limite</code> aceita de 1 a 1000, com padrão 100. <code>antes_id</code> permite buscar registros anteriores. O retorno é ordenado por ID decrescente, de forma que o painel usa a primeira linha como última leitura. O backend continua admitindo filtros, embora o frontend final mostre apenas <code>esp32-01</code>.</p>
+<p>O arquivo <code>.env</code> do computador define a chave do servidor. O <code>config.py</code> privado da placa deve ter a mesma chave. A API lê <code>.env</code> com <code>override=True</code>, evitando que uma variável esquecida no terminal prevaleça sobre esse arquivo. Uma alteração de chave exige encerrar e iniciar o servidor para que a configuração carregada seja atualizada.</p>
+<table>
+<thead>
+<tr>
+<th>Resposta</th>
+<th>Interpretação no projeto</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>201</td>
+<td>Leitura aceita e salva</td>
+</tr>
+<tr>
+<td>401</td>
+<td>Chave recebida incorreta ou ausente</td>
+</tr>
+<tr>
+<td>503</td>
+<td>Servidor sem chave configurada</td>
+</tr>
+<tr>
+<td>422</td>
+<td>Corpo inválido, incoerente ou sem campo obrigatório</td>
+</tr>
+<tr>
+<td>404</td>
+<td>Rota/registro não encontrado, conforme a consulta</td>
+</tr>
+<tr>
+<td>Timeout/erro de conexão</td>
+<td>Servidor, endereço, rede, porta ou acesso precisam ser verificados</td>
+</tr>
+</tbody>
+</table>
+<p>A chave é comparada com <code>secrets.compare_digest</code>. Uma impressão digital de seis caracteres de SHA-256 foi usada para comparar configurações nos logs sem revelar a chave. Ela é um auxílio de diagnóstico, não um segundo mecanismo de autenticação nem prova de identidade forte.</p>
+<p>O projeto é uma aplicação local. O POST é protegido por chave, mas as consultas e o painel não possuem autenticação de usuário. Não foram implementados HTTPS, contas individuais ou publicação segura na internet. Essas funções não devem ser pressupostas apenas porque a API está funcionando na rede do laboratório.</p>
+<h2 id="9-persistencia-sqlite-e-contrato-dos-campos">9. Persistência SQLite e contrato dos campos</h2>
+<p>O banco padrão fica em <code>data/estacao.db</code>, relativo à raiz do projeto. Ele é criado na inicialização e continua disponível depois de fechar o navegador ou reiniciar a API. Não é necessário instalar um servidor de banco separado.</p>
+<table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Regra atual</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>id</code></td>
+<td>Inteiro autoincremental, acrescentado pelo servidor</td>
+</tr>
+<tr>
+<td><code>recebido_em</code></td>
+<td>Horário UTC de recepção, acrescentado pelo servidor</td>
+</tr>
+<tr>
+<td><code>estacao_id</code></td>
+<td>Identificador de 1–64 caracteres; painel usa <code>esp32-01</code></td>
+</tr>
+<tr>
+<td><code>luz</code>, <code>estado</code></td>
+<td>0/1 e Claro/Escuro, com coerência entre os dois</td>
+</tr>
+<tr>
+<td><code>temperatura</code></td>
+<td>Número ou nulo, entre −40 e 80 °C</td>
+</tr>
+<tr>
+<td><code>umidade</code></td>
+<td>Número ou nulo, entre 0 e 100%</td>
+</tr>
+<tr>
+<td><code>gas</code></td>
+<td>Inteiro ou nulo, entre 0 e 4095</td>
+</tr>
+<tr>
+<td><code>pressao</code></td>
+<td>Número ou nulo, entre 300 e 1100 hPa</td>
+</tr>
+<tr>
+<td><code>temperatura_bmp</code></td>
+<td>Número ou nulo, entre −40 e 85 °C</td>
+</tr>
+<tr>
+<td><code>bmp_conectado</code></td>
+<td>Booleano coerente com os dois campos BMP</td>
+</tr>
+</tbody>
+</table>
+<p>Campos desconhecidos e números NaN/infinito são recusados. A API exige os dois valores BMP quando o booleano é verdadeiro e exige ambos nulos quando é falso. O firmware produz temperatura e umidade do DHT como par; o contrato da API não impõe por si só essa mesma regra de paridade ao DHT.</p>
+<p>As inserções usam parâmetros SQL, e há índice para estação/ID. O timestamp registrado é o instante de recepção no computador, não um relógio de aquisição emitido pela placa. O navegador o converte para o fuso local.</p>
+<p>Um banco persistente preserva o que foi aceito; ele não cria medidas durante um período de indisponibilidade. O firmware atual não possui fila offline para reenviar depois uma amostra perdida. Também não há política de retenção automática ou deduplicação de uma tentativa cujo resultado HTTP tenha ficado ambíguo.</p>
+<h2 id="10-painel-e-evolucao-da-experiencia-de-uso">10. Painel e evolução da experiência de uso</h2>
+<p>O frontend recebeu o nome <strong>Observatório</strong>, com paleta verde petróleo, cartões claros e organização responsiva. Seus seis cartões exibem temperatura DHT, umidade, pressão, luminosidade, ADC do MQ-135 e temperatura BMP. O histórico reúne os últimos 100 registros carregados e pode ser exportado em CSV.</p>
+<p>A primeira versão tinha campo de seleção de estação e botão Atualizar. O usuário observou que só havia um ESP32 no projeto. Esses controles foram removidos. A versão final consulta diretamente <code>esp32-01</code>, carrega ao abrir e se atualiza a cada cinco segundos. O horário de recepção permanece visível.</p>
+<p>O JavaScript impede consultas sobrepostas, usa timeout de oito segundos e alerta quando a última recepção tem mais de 30 segundos. Se a API fica indisponível, o texto avisa que os dados podem estar desatualizados. Mostrar uma medida antiga não comprova que a coleta continua ativa; é preciso observar o horário e o avanço dos IDs.</p>
+<p>O CSV usa separador ponto e vírgula, BOM UTF-8, escape de aspas e quebras CRLF. Ele contém o conjunto carregado no painel, não o banco inteiro, e não inclui os bytes brutos do BMP. O script de simulação usa <code>estacao_id=simulador</code>, mantido separado das medidas reais e consultável pela API; ele não aparece automaticamente no painel fixo.</p>
+<p>O ícone passou por alternativas: janela ilustrada de estação, símbolo de navegador inspirado no Edge, versão branca e, por fim, <strong>rosa dos ventos de oito pontas</strong>. O último desenho é branco e verde petróleo <code>#183B38</code>, com fundo transparente e sem letras. O vetor SVG, a prévia PNG e o ICO ficam em <code>assets/</code>; o mesmo vetor é usado como favicon.</p>
+<p><img src="ANEXOS/PAINEL_ATUAL.png" alt="Painel atual" /></p>
+<p>A captura de interface foi feita na elaboração deste relatório. Os valores nela podem ser posteriores ao corte estatístico ID 4564; sua função é documentar a apresentação e não substituir a exportação dos dados.</p>
+<h2 id="11-problemas-de-execucao-encontrados-e-correcoes">11. Problemas de execução encontrados e correções</h2>
+<table>
+<thead>
+<tr>
+<th>Problema observado</th>
+<th>Investigação e tratamento</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Uso de <code>0.0.0.0:8000</code> no navegador</td>
+<td>Diferenciar endereço de escuta de endereço de acesso; usar <code>localhost:8000</code> no notebook</td>
+</tr>
+<tr>
+<td>Ambiente Python incorreto</td>
+<td>Usar o executável da <code>.venv</code> ou selecionar o interpretador correto no VS Code</td>
+</tr>
+<tr>
+<td><code>No module named dotenv</code></td>
+<td>Dependência <code>python-dotenv</code> precisa estar no mesmo ambiente que executa Uvicorn</td>
+</tr>
+<tr>
+<td><code>.venv</code> copiada de outra pasta/computador</td>
+<td>Recriar o ambiente no destino em vez de depender de caminhos antigos dos executáveis</td>
+</tr>
+<tr>
+<td>Erros de socket/porta no Windows</td>
+<td>Conferir quem atende na porta e não iniciar servidores duplicados ou encerrar processos arbitrários</td>
+</tr>
+<tr>
+<td>POST 401</td>
+<td>Conferir correspondência da chave e reiniciar o servidor após alterar <code>.env</code></td>
+</tr>
+<tr>
+<td>Painel sem medidas</td>
+<td>Separar frontend, API, persistência, rede e envio da placa antes de culpar o HTML</td>
+</tr>
+<tr>
+<td>Hotspot reconfigurado</td>
+<td>Conferir mesma rede e IP do notebook na <code>API_URL</code> do ESP32</td>
+</tr>
+<tr>
+<td>Texto com acentos incorretos</td>
+<td>Corrigir a codificação dos documentos e mensagens para UTF-8</td>
+</tr>
+<tr>
+<td>BMP inválido bloqueando dados</td>
+<td>Retornar nulos no driver e manter o payload coerente para os demais sensores</td>
+</tr>
+</tbody>
+</table>
+<p>Os logs tinham vários GET com 200 e um POST com 401. Esses resultados não se contradizem: consultar o histórico e autenticar uma gravação são operações diferentes. Um painel acessível não garante que a placa conseguiu salvar a próxima medida.</p>
+<p>Inicializar o servidor antes de substituir uma chave de exemplo não foi tratado como corrupção do banco ou dano à placa. A investigação se concentrou na configuração efetivamente carregada, no alcance da rede e na correspondência das chaves.</p>
+<h2 id="12-investigacao-fisica-e-digital-do-bmp280">12. Investigação física e digital do BMP280</h2>
+<p>O BMP280 foi a parte mais extensa do diagnóstico. O usuário informou que um módulo funcionava no ESP32 do professor, mas o código dele não estava disponível. Esse relato foi uma pista para comparação, não uma comprovação independente da condição atual do sensor na nossa montagem.</p>
+<p>Foram examinadas ligações com diferentes pares de pinos, incluindo as etapas com GPIO18/19, a troca de SCL19 para SCL22 e a configuração definitiva SDA21/SCL22. O LDR foi retirado do GPIO21 para o GPIO18. Uma dúvida inicial sobre o fio do DHT22 foi esclarecida: o fio movido era do LDR, e o DHT permaneceu no GPIO4.</p>
+<p>O usuário confirmou que apenas um BMP estava ligado em determinada etapa; os outros sensores podiam continuar montados. Foram feitos testes de scan, endereço 0x76/0x77, ID, calibração, status, leitura em bloco e por partes, modos normal/forçado, sobreamostragem, frequências e resets. Testes de comunicação não devem ser descritos como se o software pudesse enxergar fisicamente a solda ou identificar a cor do jumper.</p>
+<p>No segundo módulo, houve momentos sem ACK e com SCL lido em zero. O isolamento do fio SCL no lado do módulo permitiu observar o GPIO alto, mas reconectar e desligar/religar ocorreram próximos. Isso não isolou uma causa física única. Nível baixo não foi considerado prova suficiente de curto ou sensor queimado.</p>
+<p>No módulo identificado como HW-611, era possível obter ID, calibração e contagens de pressão variáveis enquanto os bytes de temperatura permaneciam zerados. Esse comportamento é diferente de nunca encontrar o endereço. Também não é resolvido apenas afirmando que “o sensor precisa calibrar”.</p>
+<h3 id="o-problema-da-temperatura-bruta-zero">O problema da temperatura bruta zero</h3>
+<p>O driver lê seis bytes a partir de F7. Os três primeiros formam ADC de pressão e os três seguintes, ADC térmico, ambos de 20 bits. <code>00 00 00</code> não significa uma temperatura ambiente de 0 °C.</p>
+<p>Com a referência de calibração anterior, aplicar a fórmula ao ADC_T=0 produzia aproximadamente <strong>−132,73 °C</strong>. Esse número era consequência matemática de uma entrada térmica inválida para o uso pretendido, não um ambiente realmente nessa temperatura. A pressão calculada com essa compensação também não foi publicada como uma medida validada.</p>
+<p>O driver passou a rejeitar ADC zero, <code>0x80000</code> e <code>0xFFFFF</code>, além de resultados compensados fora da faixa. O valor <code>0x80000</code> é uma sentinela distinta; não deve ser confundido com <code>0x00000</code>. O objetivo foi preservar a coerência dos dados, sem transformar erro em um valor visualmente agradável.</p>
+<p>Não se somou um offset arbitrário à temperatura, não se escreveu uma temperatura escolhida nos dados brutos e não se usou o DHT22 para substituir o valor interno na compensação. A documentação técnica associa a pressão ao resultado térmico interno e aos coeficientes do componente. Os registradores de dados não são campos de calibração livre para editar. <a href="https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bmp280-ds001.pdf">Bosch, compensação e mapa de registros</a>.</p>
+<h2 id="13-teste-independente-arduino-e-restauracao">13. Teste independente Arduino e restauração</h2>
+<p>Foi discutida a possibilidade de verificar a biblioteca Arduino/Adafruit. A execução em C++ substituiria temporariamente o MicroPython; não seriam os dois programas rodando simultaneamente no mesmo espaço de firmware. O usuário autorizou prosseguir desde que o sistema fosse preservado.</p>
+<p>Antes da gravação, foram salvos fontes/configurações e snapshot consistente do banco. Duas leituras integrais da flash de <strong>4 MiB</strong> foram obtidas a 115200 baud e comparadas. Ambas apresentaram o mesmo SHA-256:</p>
+<pre><code class="language-text">C52BE2D30FD954D265346E2C6A186551EDBC2BBAB2F9421B41561B9F62921EED
+</code></pre>
+<p>O backup da fase continha 41 arquivos do projeto, snapshot com 2.768 registros e 14 arquivos do sistema de arquivos da placa conferidos. Essas são contagens daquele ponto, não o inventário final de hoje. As imagens da flash são privadas e não acompanham o arquivo compartilhável.</p>
+<table>
+<thead>
+<tr>
+<th>Item do teste Arduino</th>
+<th>Valor registrado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Arduino CLI</td>
+<td>1.6.0</td>
+</tr>
+<tr>
+<td>Core Arduino-ESP32</td>
+<td>2.0.17</td>
+</tr>
+<tr>
+<td>Adafruit BMP280 Library</td>
+<td>3.0.0</td>
+</tr>
+<tr>
+<td>I²C</td>
+<td>SDA21/SCL22, 100 kHz</td>
+</tr>
+<tr>
+<td>Perfil</td>
+<td>Normal, temperatura ×16, pressão ×16, filtro desligado</td>
+</tr>
+<tr>
+<td>Início</td>
+<td>11/11, 12:56:48 UTC−3</td>
+</tr>
+<tr>
+<td>Duração / amostras</td>
+<td>180 s / 179 amostras</td>
+</tr>
+<tr>
+<td>ADC térmico zero</td>
+<td>179 de 179</td>
+</tr>
+<tr>
+<td>Medições plausíveis</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<p>O sketch não usava Wi-Fi nem enviava à API. Portanto, os valores <strong>23,8 °C e 936,22 hPa</strong> encontrados anteriormente no banco <strong>não vieram desse teste Arduino</strong>. Eram registros MicroPython anteriores.</p>
+<p>O resultado independente reduziu a força da hipótese de erro exclusivo da fórmula Python, mas não identificou a causa física. As próprias consultas diagnósticas não tiveram erro; isso não certifica todas as operações internas da biblioteca, nem permite afirmar que o módulo estava eletricamente perfeito.</p>
+<p>Após o ensaio, a flash original foi regravada e verificada integralmente. Os 14 arquivos da placa coincidiram com o estado salvo e o MicroPython voltou a iniciar. Não houve gravação de eFuses nem erase-all. O banco do notebook não foi revertido para um snapshot antigo; as novas leituras continuaram sendo acrescentadas.</p>
+<h2 id="14-recuperacao-do-bmp-janelas-evidencias-e-incerteza-causal">14. Recuperação do BMP: janelas, evidências e incerteza causal</h2>
+<p>O banco contém os seguintes períodos válidos antes da fase de recuperação a partir de 3443:</p>
+<table>
+<thead>
+<tr>
+<th>Data e horário local</th>
+<th>IDs</th>
+<th style="text-align:right">Registros</th>
+<th>Temperatura BMP</th>
+<th>Pressão hPa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10/11, 23:56:49–23:57:17</td>
+<td>1828–1833</td>
+<td style="text-align:right">6</td>
+<td>27,8–29,6 °C</td>
+<td>937,42–937,49</td>
+</tr>
+<tr>
+<td>11/11, 11:46:43–11:47:52</td>
+<td>2334–2346</td>
+<td style="text-align:right">13</td>
+<td>25,3–28,8 °C</td>
+<td>936,82–936,89</td>
+</tr>
+<tr>
+<td>11/11, 12:06:15–12:06:21</td>
+<td>2511–2512</td>
+<td style="text-align:right">2</td>
+<td>24,3–24,5 °C</td>
+<td>936,48–936,53</td>
+</tr>
+<tr>
+<td>11/11, 12:06:54</td>
+<td>2518</td>
+<td style="text-align:right">1</td>
+<td>24,4 °C</td>
+<td>936,50</td>
+</tr>
+<tr>
+<td>11/11, 12:15:55–12:19:52</td>
+<td>2617–2660</td>
+<td style="text-align:right">44</td>
+<td>23,8–24,0 °C</td>
+<td>936,21–936,30</td>
+</tr>
+</tbody>
+</table>
+<p>Esses 66 registros são reais no histórico, mas não identificam eletronicamente qual módulo físico os originou. Em uma janela o usuário confirmou o segundo; em outra informou o professor e depois levantou a possibilidade de confusão durante a troca. O relatório não transforma essa dúvida em certeza.</p>
+<p>Dois monitores posteriores, às 13h37 e 14h16, registraram 18 tentativas cada com ADC_T=0. Na segunda janela o HW-611 foi explicitamente confirmado. Os outros sensores continuaram sendo enviados: <strong>18 envios aceitos não significam 18 medições BMP válidas</strong>, pois o payload podia ter BMP nulo.</p>
+<p>Depois da orientação de troca para o segundo módulo, o usuário respondeu “pode ir”. A identificação desse novo teste é contextual. O banco já recebeu BMP válido no <strong>ID 3443, às 14:20:17</strong>, e nos dois registros seguintes. O monitor começou depois, por volta de <strong>14:20:31</strong>. Assim, o retorno das medidas <strong>não foi causado comprovadamente pelo monitor</strong>, pelo Arduino ou por uma nova biblioteca.</p>
+<p>O monitor válido gerou <strong>18/18 medições BMP aceitas</strong>, uma inicialização e 18 envios aceitos. Um proxy capturou o mesmo bloco bruto consumido pela chamada que calculou a medida, e a calibração recém-lida conferiu com o cache.</p>
+<table>
+<thead>
+<tr>
+<th>Evidência da primeira amostra</th>
+<th>Valor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RAW de seis bytes</td>
+<td><code>6028507f2480</code></td>
+</tr>
+<tr>
+<td>ADC de pressão</td>
+<td>393861</td>
+</tr>
+<tr>
+<td>ADC de temperatura</td>
+<td>520776</td>
+</tr>
+<tr>
+<td>Temperatura recalculada independentemente</td>
+<td>23,58981788696 °C</td>
+</tr>
+<tr>
+<td>Pressão recalculada independentemente</td>
+<td>935,01291463091 hPa</td>
+</tr>
+<tr>
+<td>Valores arredondados enviados</td>
+<td>23,6 °C / 935,01 hPa</td>
+</tr>
+</tbody>
+</table>
+<p>Bloco de calibração da janela válida:</p>
+<pre><code class="language-text">266d276918fc7d9520d6d00b9f130e01f9ff8c3cf8c67017
+</code></pre>
+<p>Referência anterior do HW-611:</p>
+<pre><code class="language-text">d46a7a633200b9946ed6d00bd513f9fff9ff8c3cf8c67017
+</code></pre>
+<p>A diferença ajuda a comparar estados, mas não é um número de série garantido. Os coeficientes foram lidos, não modificados. Cada sensor precisa utilizar seus próprios valores. O ID 0x58 e o endereço 0x76 também não autenticam fabricante nem individualizam o módulo.</p>
+<p>A primeira referência extensa preservada reúne <strong>217/217 registros válidos</strong>, IDs 3443–3659, entre 14:20:17 e 14:40:03. Além disso, foi verificado que o programa normal continuou enviando depois do reset. A causa exata da recuperação permaneceu aberta: troca de módulo, contato, alimentação/interconexão ou funcionamento interno não foram isolados por instrumento.</p>
+<h2 id="15-atalho-windows-e-inicializacao-automatica-por-clique">15. Atalho Windows e inicialização automática por clique</h2>
+<p>O usuário solicitou abrir o sistema por um ícone na área de trabalho, sem digitar comandos. A solução possui um iniciador Python e um instalador de atalho PowerShell. Não foi instalado um serviço de inicialização automática do Windows.</p>
+<p>O atalho chama o <code>pythonw.exe</code> da <code>.venv</code>. O iniciador consulta a saúde, o título e as rotas esperadas da API. Quando a estação já está atendendo, abre o navegador. Quando a API está desligada, valida o ambiente, inicia um novo console e aguarda a API ficar pronta. Se outro serviço ocupa a porta, informa o problema sem encerrá-lo nem mudar de porta automaticamente.</p>
+<p>Um mutex Win32 por raiz/porta serializa cliques simultâneos. O servidor usa o <code>python.exe</code> da instalação e executa Uvicorn em <code>0.0.0.0:8000</code>, sem reload no modo normal. O console deve permanecer aberto durante a recepção. Fechar apenas o navegador não para o servidor.</p>
+<p>Na migração de pasta, o teste real de partida fria mostrou que um timeout de um segundo podia expirar antes de o Windows informar conexão recusada no loopback. A recusa foi observada em cerca de dois segundos. O iniciador foi ajustado para <strong>três segundos</strong> nessa verificação e então iniciou a estação pelo atalho. A espera nominal de partida é 30 s, e a do mutex, 40 s.</p>
+<p>O instalador cria uma cópia do ICO com hash no nome para o Explorer reconhecer mudanças de desenho. Assim, foi possível atualizar a aparência sem apagar caches do sistema ou reiniciar o Explorer. Ao mudar de computador ou pasta, deve-se recriar o atalho, pois ele referencia o caminho local.</p>
+<p>O ESP32 pode ser alimentado por fonte/tomada, sem USB no notebook. Isso não liga o servidor do computador: o notebook continua precisando estar ligado, na mesma rede acessível, com a API ativa e o IP correto configurado na placa.</p>
+<h2 id="16-organizacao-migracao-e-limpeza-da-area-de-trabalho">16. Organização, migração e limpeza da área de trabalho</h2>
+<p>O projeto esteve em pastas da área de trabalho, incluindo <code>projeto-cc-v2\projeto-cc</code>. A instalação ativa foi transferida para:</p>
+<pre><code class="language-text">C:\Users\Windows\computer-science\estacao-meteorologica
+</code></pre>
+<p>Antes da transferência, foram preparados os pacotes já instalados, um backup consistente do banco e um inventário de integridade. A pasta antiga estava em uso por outro processo; o conteúdo foi transferido para o destino validado. O ambiente antigo foi preservado como reserva e uma nova <code>.venv</code> foi criada no caminho final.</p>
+<p>Foram conferidos <strong>153 arquivos</strong> antes dos ajustes posteriores de documentação/iniciador. O banco estava íntegro com <strong>4.174 registros</strong> no fim da transferência. As <strong>40 versões de pacotes</strong> anteriores foram restabelecidas. Configurações, firmware e backups permaneceram preservados; o atalho foi atualizado para o novo caminho e usado para reabrir o servidor.</p>
+<p>A migração exigiu interromper o servidor. O banco mostra uma lacuna entre IDs 4174 e 4175, de 19:13:07 a 19:21:25. Os dados já gravados foram preservados. As amostras não recebidas durante uma indisponibilidade não são recuperadas automaticamente, porque não há fila offline.</p>
+<p>Depois, o usuário autorizou excluir <code>Desktop\projeto-cc</code> e <code>Desktop\projeto-cc-v2</code>. A primeira continha versão antiga, configurações, banco e <code>.venv</code>; a segunda só tinha um subdiretório vazio. Um backup privado completo de <strong>2.950 arquivos</strong>, com integridade verificada, foi guardado dentro de <code>backup_esp32</code>. As duas pastas foram enviadas à Lixeira, e o sistema ativo continuou respondendo no novo local.</p>
+<p>Os arquivos ZIP/RAR de entrega são cópias para guardar ou compartilhar. O sistema em execução usa a pasta ativa, a <code>.venv</code>, as configurações e o banco dessa instalação. Apagar uma cópia de entrega da área de trabalho não é o mesmo que apagar o projeto ativo.</p>
+<h2 id="17-testes-de-software-e-verificacoes-reais">17. Testes de software e verificações reais</h2>
+<p>O conjunto atual reúne <strong>46 casos automatizados</strong>, incluindo parametrizações:</p>
+<table>
+<thead>
+<tr>
+<th>Grupo</th>
+<th style="text-align:right">Casos</th>
+<th>O que verifica</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>API</td>
+<td style="text-align:right">5</td>
+<td>Autenticação, contrato, persistência, filtros e erros</td>
+</tr>
+<tr>
+<td>Backup</td>
+<td style="text-align:right">11</td>
+<td>Snapshots, integridade, WAL, arquivos, destinos e preservação de cópias anteriores</td>
+</tr>
+<tr>
+<td>Driver BMP</td>
+<td style="text-align:right">7</td>
+<td>Compensação numérica, dados brutos inválidos, calibração, timeout e retorno coerente</td>
+</tr>
+<tr>
+<td>Empacotamento</td>
+<td style="text-align:right">2</td>
+<td>Integridade da entrega, conteúdo necessário, exclusão de privados e proteção de arquivo existente</td>
+</tr>
+<tr>
+<td>Iniciador</td>
+<td style="text-align:right">21</td>
+<td>API própria/alheia, reutilização, partida, erro, console, navegador, mutex e argumentos</td>
+</tr>
+</tbody>
+</table>
+<p>Os testes usam dublês de hardware, processos e navegador ou bancos temporários. Não medem a tensão dos fios, não certificam o MQ-135 e não provam autenticidade de um chip. Uma conta de testes aprovada não deve ser confundida com uma calibração física.</p>
+<p>Além deles, houve verificações reais: comunicação serial e registradores durante o diagnóstico; API e banco avançando com o ESP32; recálculo independente de RAW/calibração; renderização do painel; execução do atalho mantendo o mesmo PID da API já ativa; partida de servidor em porta e banco temporários; e partida do atalho no novo local depois da migração.</p>
+<p>As contagens históricas menores representam etapas anteriores, não uma contradição: a revisão inicial registrou cinco testes, a proteção do driver ampliou a cobertura, o empacotamento e os backups acrescentaram casos, e o iniciador levou o conjunto a 46. O resultado completo de 46 aprovados foi observado novamente no ambiente reconstruído.</p>
+<h2 id="18-situacao-dos-dados-no-corte-final">18. Situação dos dados no corte final</h2>
+<table>
+<thead>
+<tr>
+<th>Data local</th>
+<th>IDs</th>
+<th style="text-align:right">Registros</th>
+<th style="text-align:right">BMP válido</th>
+<th style="text-align:right">BMP nulo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>04/11/2026</td>
+<td>1–175</td>
+<td style="text-align:right">175</td>
+<td style="text-align:right">0</td>
+<td style="text-align:right">175</td>
+</tr>
+<tr>
+<td>10/11/2026</td>
+<td>176–1859</td>
+<td style="text-align:right">1684</td>
+<td style="text-align:right">6</td>
+<td style="text-align:right">1678</td>
+</tr>
+<tr>
+<td>11/11/2026, até o corte</td>
+<td>1860–4564</td>
+<td style="text-align:right">2705</td>
+<td style="text-align:right">1182</td>
+<td style="text-align:right">1523</td>
+</tr>
+<tr>
+<td>Total</td>
+<td>1–4564</td>
+<td style="text-align:right">4564</td>
+<td style="text-align:right">1188</td>
+<td style="text-align:right">3376</td>
+</tr>
+</tbody>
+</table>
+<p>Os campos DHT/LDR/MQ estavam preenchidos nos 4.564 registros. Valores ADC iguais a zero foram contados como preenchidos, não como ausência. Não foram encontradas incoerências entre o booleano BMP e seus campos no corte examinado.</p>
+<p>Depois de 3443, as amostras recebidas ficaram em <strong>23,2–26,2 °C</strong> para BMP e <strong>928,18–935,12 hPa</strong> para pressão. Essa variação é descritiva. A pressão é absoluta local, sem redução automática ao nível do mar; não houve validação contra instrumento meteorológico de referência.</p>
+<h3 id="lacunas-de-recepcao-depois-da-recuperacao">Lacunas de recepção depois da recuperação</h3>
+<p>Houve <strong>15 intervalos superiores a 30 s</strong>, dos quais sete foram superiores a 60 s. Os cinco maiores que 300 s estão abaixo:</p>
+<table>
+<thead>
+<tr>
+<th>Entre IDs</th>
+<th>Horário local</th>
+<th>Duração aproximada</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3729–3730</td>
+<td>14:48:45–15:02:00</td>
+<td>13 min15 s</td>
+</tr>
+<tr>
+<td>3774–3775</td>
+<td>15:07:04–18:12:45</td>
+<td>3 h05 min42 s</td>
+</tr>
+<tr>
+<td>4015–4016</td>
+<td>18:37:11–18:52:41</td>
+<td>15 min30 s</td>
+</tr>
+<tr>
+<td>4174–4175</td>
+<td>19:13:07–19:21:25</td>
+<td>8 min18 s</td>
+</tr>
+<tr>
+<td>4370–4371</td>
+<td>19:50:51–19:57:05</td>
+<td>6 min14 s</td>
+</tr>
+</tbody>
+</table>
+<p>O banco mostra quando não chegaram registros, mas sozinho não distingue placa desligada, servidor indisponível, rede, teste temporário ou outra causa. A pausa da migração possui contexto registrado; as demais não devem receber uma explicação inventada.</p>
+<h3 id="ultima-leitura-incluida-na-analise">Última leitura incluída na análise</h3>
+<pre><code class="language-json">{
+  &quot;id&quot;: 4564,
+  &quot;estacao_id&quot;: &quot;esp32-01&quot;,
+  &quot;recebido_em&quot;: &quot;2026-11-11T23:16:00.755266+00:00&quot;,
+  &quot;luz&quot;: 0,
+  &quot;estado&quot;: &quot;Claro&quot;,
+  &quot;temperatura&quot;: 24.4,
+  &quot;umidade&quot;: 68.2,
+  &quot;gas&quot;: 234,
+  &quot;pressao&quot;: 929.12,
+  &quot;temperatura_bmp&quot;: 24.9,
+  &quot;bmp_conectado&quot;: true
+}
+</code></pre>
+<p>Esses dados, o resumo das lacunas e o esquema SQL acompanham o documento nos anexos. A planilha contém todos os registros até 4564; não é um banco a ser colocado sobre a instalação atual.</p>
+<h2 id="19-como-executar-e-manter-a-versao-entregue">19. Como executar e manter a versão entregue</h2>
+<h3 id="uso-cotidiano">Uso cotidiano</h3>
+<ol>
+<li>Alimentar a estação e conectar o notebook à rede correta.</li>
+<li>Abrir <strong>Estação Meteorológica</strong> pelo atalho.</li>
+<li>Manter o console do servidor aberto.</li>
+<li>Conferir se o horário da última recepção e os IDs continuam avançando.</li>
+<li>Exportar CSV quando precisar levar o conjunto recente de dados para planilha.</li>
+</ol>
+<p>Uma interface aberta com dados antigos não confirma coleta atual. O indicador de atraso e o horário são parte da operação, não apenas decoração.</p>
+<h3 id="instalacao-em-outro-computador">Instalação em outro computador</h3>
+<p>Extrair o projeto antes de usar os comandos, abrir a pasta no VS Code e criar uma <code>.venv</code> local. O pacote não deve transportar o ambiente do notebook original. A configuração do servidor e a configuração da placa precisam ser preenchidas com os dados da nova rede.</p>
+<pre><code class="language-powershell">python -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -r requirements-dev.txt
+Copy-Item .env.example .env
+Copy-Item firmware/config.example.py firmware/config.py
+</code></pre>
+<p>Os comandos de cópia acima são para uma instalação nova. Em uma instalação já configurada, preservar os arquivos existentes. Escolher a chave e usá-la nos dois ambientes; definir a <code>API_URL</code> com o IP do computador, terminando em <code>/api/leituras</code>; manter <code>ESTACAO_ID=&quot;esp32-01&quot;</code> para o painel atual.</p>
+<pre><code class="language-powershell">.\.venv\Scripts\python.exe -m uvicorn backend.main:app --host 0.0.0.0 --port 8000 --env-file .env
+</code></pre>
+<p>Depois da preparação, criar o atalho com o instalador. O comando usa uma política somente para esse processo e não altera a política permanente do Windows:</p>
+<pre><code class="language-powershell">powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\scripts\criar_atalho.ps1
+</code></pre>
+<p>O ESP32 já precisa possuir MicroPython. Enviar arquivos Python não é o mesmo que instalar a imagem do firmware. O procedimento completo de upload está em <code>COMO_EXECUTAR.md</code>, preservado nos anexos. Não é preciso reinstalar Arduino para usar a estação atual.</p>
+<h3 id="se-parar-de-receber-dados">Se parar de receber dados</h3>
+<p>Começar pela API e pelo horário dos registros, sem interromper a placa:</p>
+<pre><code class="language-powershell">Invoke-RestMethod 'http://localhost:8000/api/saude'
+Invoke-RestMethod 'http://localhost:8000/api/leituras/ultima?estacao_id=esp32-01' |
+    Format-List
+</code></pre>
+<p>Se o ID não avança, investigar energia, execução da placa, rede, IP e resposta dos POST. Se só o BMP fica nulo enquanto os outros campos chegam, concentrar o diagnóstico no módulo, nos seus dados brutos e na montagem. Se a API contém medidas atuais e o painel não, recarregar a aba com Ctrl+F5.</p>
+<p>O reteste preferido do BMP é <code>scripts/monitorar_bmp280.py</code>, em RAM, com captura dos bytes efetivamente calculados. Ele pausa o <code>main.py</code>, mas lê os outros sensores e tenta enviar suas medidas reais. Ao terminar, o host deve executar reset para retomar o programa normal. O guia de recuperação nos anexos apresenta o comando com <code>try/finally</code>.</p>
+<p>Registrar o módulo físico, a hora, a pinagem, o primeiro erro e o que mudou. Alterar uma variável por vez e guardar também amostras inválidas. Não substituir zeros por números escolhidos, não publicar uma pressão compensada sem validação térmica e não considerar um scan positivo como diagnóstico concluído.</p>
+<h2 id="20-limitacoes-decisoes-e-trabalhos-futuros">20. Limitações, decisões e trabalhos futuros</h2>
+<table>
+<thead>
+<tr>
+<th>Tema</th>
+<th>O que está implementado</th>
+<th>O que permanece fora do resultado comprovado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Organização</td>
+<td>Módulos separados e integração funcionando</td>
+<td>Manutenção futura e novos modelos de placa exigem revisão</td>
+</tr>
+<tr>
+<td>Histórico</td>
+<td>SQLite persistente com registros reais recebidos</td>
+<td>Fila offline, retenção automática e deduplicação</td>
+</tr>
+<tr>
+<td>Visualização</td>
+<td>Painel local, status, histórico e CSV</td>
+<td>Gráficos analíticos, contas de usuário e aplicativo móvel dedicado</td>
+</tr>
+<tr>
+<td>BMP</td>
+<td>Medidas validadas pelo software e evidência RAW/calibração</td>
+<td>Causa física única da falha/recuperação e precisão metrológica</td>
+</tr>
+<tr>
+<td>MQ-135</td>
+<td>ADC bruto disponível</td>
+<td>Ppm, seletividade de gases e qualidade do ar calibrada</td>
+</tr>
+<tr>
+<td>LDR</td>
+<td>Estado digital Claro/Escuro</td>
+<td>Lux e curva de calibração luminosa</td>
+</tr>
+<tr>
+<td>Rede</td>
+<td>Reconexão e tentativas de envio</td>
+<td>Independência do IP do notebook e armazenamento offline</td>
+</tr>
+<tr>
+<td>Segurança</td>
+<td>Chave para gravação e exclusão de segredos das entregas</td>
+<td>HTTPS e autenticação completa para internet</td>
+</tr>
+<tr>
+<td>Inicialização</td>
+<td>Atalho por clique e console local</td>
+<td>Serviço automático ao iniciar o Windows</td>
+</tr>
+</tbody>
+</table>
+<p>Como próximos trabalhos possíveis, o grupo pode estudar armazenamento offline, endereço de servidor mais estável, diagnóstico estruturado de falhas, testes mais longos em ambiente externo e comparação com instrumentos de referência. Essas atividades são propostas, não funcionalidades que já existam no projeto.</p>
+<p>Uma lição central foi separar camadas. Um erro HTTP não prova defeito de sensor; um ID de chip legível não prova conversão válida; um dado válido no banco não prova recepção contínua; e um teste de software aprovado não equivale a calibração física. Essa separação tornou o diagnóstico mais verificável e impediu que a interface escondesse falhas com números artificiais.</p>
+<h2 id="21-conteudo-da-entrega-documental">21. Conteúdo da entrega documental</h2>
+<p>O arquivo compactado reúne este relatório em PDF, HTML e Markdown, além do catálogo técnico e dos anexos selecionados. O PDF é a versão pronta para leitura; o Markdown pode ser editado; o HTML permite navegação pelo sumário no navegador. Os números são do corte indicado na capa.</p>
+<table>
+<thead>
+<tr>
+<th>Anexo</th>
+<th>Uso</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>CATALOGO_TECNICO.md</code></td>
+<td>Arquivos, classes, funções, parâmetros e cobertura de testes</td>
+</tr>
+<tr>
+<td><code>RESUMO_DO_BANCO.json</code></td>
+<td>Estatísticas, última leitura e lacunas do corte 4564</td>
+</tr>
+<tr>
+<td><code>LEITURAS_ATE_ID 4564.csv</code></td>
+<td>Registros exportados para planilha</td>
+</tr>
+<tr>
+<td><code>ESQUEMA_DO_BANCO.sql</code></td>
+<td>Estrutura da tabela e índice</td>
+</tr>
+<tr>
+<td><code>ARQUITETURA.svg</code></td>
+<td>Diagrama vetorial dos componentes</td>
+</tr>
+<tr>
+<td><code>PAINEL_ATUAL.png</code></td>
+<td>Página renderizada durante a elaboração</td>
+</tr>
+<tr>
+<td><code>documentos_do_projeto/</code></td>
+<td>Guias e relatórios históricos, identificados como documentos de apoio</td>
+</tr>
+<tr>
+<td><code>referencia_bmp280_20261111/</code></td>
+<td>Evidências públicas da recuperação de14h20 e das falhas anteriores</td>
+</tr>
+<tr>
+<td><code>MANIFESTO_SHA256.json</code></td>
+<td>Conferência de integridade dos arquivos entregues</td>
+</tr>
+</tbody>
+</table>
+<p>Os relatórios antigos podem descrever interfaces e estados anteriores. Em caso de diferença, o corpo deste documento identifica o estado final e preserva o documento antigo como evidência da evolução. O pacote não substitui o projeto em execução e não deve ser usado para sobrescrever o banco ativo.</p>
+<h2 id="22-referencias-tecnicas-e-documentais">22. Referências técnicas e documentais</h2>
+<ul>
+<li>Código e documentação do próprio projeto, na pasta ativa e nos anexos selecionados.</li>
+<li>Banco SQLite, consulta somente leitura com corte em ID 4564; logs dos monitores MicroPython e documentação do ensaio Arduino.</li>
+<li><a href="https://docs.micropython.org/en/latest/reference/mpremote.html">MicroPython: documentação de mpremote</a>.</li>
+<li><a href="https://docs.micropython.org/en/latest/library/machine.I2C.html">MicroPython: API machine.I2C</a>.</li>
+<li><a href="https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bmp280-ds001.pdf">Bosch Sensortec: datasheet BMP280 no endereço utilizado nos testes</a>.</li>
+<li><a href="https://github.com/adafruit/Adafruit_BMP280_Library">Adafruit: biblioteca BMP280</a>.</li>
+<li><a href="https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/peripherals/i2c.html">Espressif: interface I²C do ESP32</a>.</li>
+<li><a href="https://docs.espressif.com/projects/esptool/en/latest/esp32/esptool/basic-commands.html">Espressif: comandos do esptool</a>.</li>
+<li><a href="https://fastapi.tiangolo.com/tutorial/">FastAPI: documentação oficial</a>.</li>
+<li><a href="https://docs.python.org/3/library/venv.html">Python: ambientes virtuais</a>.</li>
+<li><a href="https://docs.python.org/3/library/sqlite3.html">Python: sqlite3 e API de backup</a>.</li>
+<li><a href="https://learn.microsoft.com/en-us/troubleshoot/windows-client/admin-development/create-desktop-shortcut-with-wsh">Microsoft: criação de atalhos com Windows Script Host</a>.</li>
+</ul>
+<p>O histórico comprova a construção e o funcionamento observado da solução. A causa física exata da falha original do BMP e sua precisão como instrumento de medição permanecem questões distintas do sucesso de integração alcançado.</p>
+<hr />
+<h2 id="23-catalogo-tecnico-dos-arquivos">23. Catálogo técnico dos arquivos</h2>
+<p>Este catálogo descreve o código atual, separando funções executadas na placa, no computador e no navegador. Os nomes são referências para localizar a implementação; não são uma instrução para executar todos os scripts. Configurações privadas e imagens de flash não foram reproduzidas.</p>
+<h3 id="firmware-e-coordenacao-na-placa">Firmware e coordenação na placa</h3>
+<table>
+<thead>
+<tr>
+<th>Arquivo</th>
+<th>Componentes e responsabilidade</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>firmware/main.py</code></td>
+<td><code>main()</code> cria LDR18, DHT4, MQ34 e BMP SDA21/SCL22. Em laço, lê cada driver, reúne o payload, conecta ao Wi-Fi e chama o cliente HTTP. Trata erros individuais e falhas de envio.</td>
+</tr>
+<tr>
+<td><code>firmware/wifi.py</code></td>
+<td><code>conectar(ssid, senha, timeout=20)</code> ativa a interface Station e reutiliza ou estabelece conexão. Consulta o estado a cada 250 ms e limita a espera por padrão a 20 s.</td>
+</tr>
+<tr>
+<td><code>firmware/api_client.py</code></td>
+<td><code>enviar(url, chave, dados)</code> cria POST HTTP/1.0 JSON por socket, envia <code>X-API-Key</code>, aceita status 201 e fecha o socket em <code>finally</code>. O timeout é 5 s. <code>DICAS</code> explica erros 401, 503, 422 e 404.</td>
+</tr>
+<tr>
+<td><code>firmware/config.example.py</code></td>
+<td>Modelo público de rede, senha, URL, chave, estação e intervalo. Deve ser copiado e preenchido no computador de destino. O arquivo privado <code>config.py</code> não integra a entrega pública.</td>
+</tr>
+<tr>
+<td><code>firmware/sensors/__init__.py</code></td>
+<td>Define o pacote dos drivers.</td>
+</tr>
+</tbody>
+</table>
+<p>A placa usa MicroPython. Copiar esses arquivos para o computador não torna <code>machine</code>, <code>dht</code> e <code>network</code> módulos do Python comum. O backend e o frontend permanecem fora da placa.</p>
+<h3 id="drivers-dos-quatro-sensores">Drivers dos quatro sensores</h3>
+<table>
+<thead>
+<tr>
+<th>Arquivo</th>
+<th>Classe/métodos</th>
+<th>Resultado e tratamento</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>sensors/ldr.py</code></td>
+<td><code>SensorLDR.__init__()</code>, <code>ler()</code></td>
+<td>Configura entrada digital. Retorna <code>luz</code> e <code>estado</code>, com 0=Claro e 1=Escuro.</td>
+</tr>
+<tr>
+<td><code>sensors/dht22.py</code></td>
+<td><code>SensorDHT22.__init__()</code>, <code>ler()</code></td>
+<td>Instancia DHT22, respeita 2,5 s entre aquisições, arredonda a uma casa e retorna temperatura/umidade nulas em erro de aquisição.</td>
+</tr>
+<tr>
+<td><code>sensors/mq135.py</code></td>
+<td><code>SensorMQ135.__init__()</code>, <code>ler()</code></td>
+<td>ADC 12 bits, atenuação 11 dB, contagem 0–4095; retorna nulo em falha prevista.</td>
+</tr>
+<tr>
+<td><code>sensors/bmp280.py</code></td>
+<td><code>BMP280.__init__()</code></td>
+<td>Reseta o dispositivo, espera cópia da NVM, lê 24 bytes de calibração e configura o perfil.</td>
+</tr>
+<tr>
+<td><code>sensors/bmp280.py</code></td>
+<td><code>BMP280._aguardar()</code></td>
+<td>Verifica status e modo, dormindo entre consultas e respeitando timeout.</td>
+</tr>
+<tr>
+<td><code>sensors/bmp280.py</code></td>
+<td><code>BMP280.ler()</code></td>
+<td>Dispara conversão, espera, lê RAW, extrai ADCs, calcula temperatura/pressão e valida faixa.</td>
+</tr>
+<tr>
+<td><code>sensors/bmp280.py</code></td>
+<td><code>SensorBMP280.__init__()</code>, <code>ler()</code></td>
+<td>Gerencia SoftI2C, descoberta, instanciação e tentativa posterior de recuperação. Retorna os campos BMP nulos quando não há medição validada.</td>
+</tr>
+</tbody>
+</table>
+<p>No BMP, o barramento é 50 kHz e o timeout de SoftI2C é 5000 µs. A descoberta consulta 0x76/0x77 e espera ID 0x58. O reset escreve 0xB6 em E0; a inicialização usa F5=00 e F4=54; a leitura usa F4=55, perfil forçado T×2/P×16. A espera da conversão é limitada a 1000 ms. O bloco F7–FC contém pressão e temperatura de 20 bits.</p>
+<p>O formato de calibração é <code>&lt;HhhHhhhhhhhh</code>: T1 e P1 sem sinal; os demais com sinal. O driver rejeita blocos evidentemente vazios/inválidos, ADCs especiais e medidas fora da faixa. O wrapper reinicia a busca quando necessário, sem transformar a exceção em temperatura zero ou pressão inventada.</p>
+<h3 id="api-e-ciclo-de-vida">API e ciclo de vida</h3>
+<table>
+<thead>
+<tr>
+<th>Componente</th>
+<th>Função</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>backend/main.py: impressao_digital()</code></td>
+<td>Gera os seis primeiros caracteres hexadecimais de SHA-256 para comparar chaves nos logs sem revelar seu conteúdo.</td>
+</tr>
+<tr>
+<td><code>create_app()</code></td>
+<td>Cria o banco e a aplicação FastAPI, monta arquivos estáticos e registra rotas. Pode receber banco/chave de teste explicitamente.</td>
+</tr>
+<tr>
+<td><code>lifespan()</code></td>
+<td>Inicializa tabela/índice e registra a condição da chave no início do servidor.</td>
+</tr>
+<tr>
+<td><code>painel()</code></td>
+<td>Retorna o HTML do frontend.</td>
+</tr>
+<tr>
+<td><code>saude()</code></td>
+<td>Informa disponibilidade básica da aplicação.</td>
+</tr>
+<tr>
+<td><code>criar()</code></td>
+<td>Confere chave e persiste um payload validado.</td>
+</tr>
+<tr>
+<td><code>listar()</code></td>
+<td>Consulta histórico por estação, limite e cursor.</td>
+</tr>
+<tr>
+<td><code>ultima()</code></td>
+<td>Retorna a última linha ou 404.</td>
+</tr>
+<tr>
+<td><code>backend/__init__.py</code></td>
+<td>Define o pacote Python.</td>
+</tr>
+</tbody>
+</table>
+<p>A configuração <code>.env</code> é carregada a partir da raiz com <code>override=True</code>. A aplicação fecha sobre a chave carregada; editar o arquivo sem reiniciar o processo não atualiza essa variável. Consultas são públicas no modelo local; somente o POST exige a chave.</p>
+<h3 id="modelo-e-persistencia">Modelo e persistência</h3>
+<table>
+<thead>
+<tr>
+<th>Arquivo/componente</th>
+<th>Responsabilidade</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>schemas.py: LeituraEntrada</code></td>
+<td>Tipos, faixas, campos obrigatórios, números finitos e recusa de campos desconhecidos.</td>
+</tr>
+<tr>
+<td><code>LeituraEntrada.validar_estados()</code></td>
+<td>Coerência Claro/Escuro com0/1 e coerência do booleano BMP com valores presentes/nulos.</td>
+</tr>
+<tr>
+<td><code>LeituraSaida</code></td>
+<td>Acrescenta <code>id</code> e <code>recebido_em</code>.</td>
+</tr>
+<tr>
+<td><code>database.py: Banco.__init__()</code></td>
+<td>Guarda o caminho do arquivo.</td>
+</tr>
+<tr>
+<td><code>Banco.conectar()</code></td>
+<td>Gerencia a conexão e a transação, com timeout de 10 s.</td>
+</tr>
+<tr>
+<td><code>Banco.inicializar()</code></td>
+<td>Cria pasta, tabela e índice quando necessário.</td>
+</tr>
+<tr>
+<td><code>Banco.salvar()</code></td>
+<td>Insere com parâmetros SQL, acrescenta horário UTC e retorna a linha criada.</td>
+</tr>
+<tr>
+<td><code>Banco.listar()</code></td>
+<td>Combina filtros e retorna linhas por ID decrescente.</td>
+</tr>
+</tbody>
+</table>
+<p>A estrutura possui uma tabela principal <code>leituras</code>. A configuração de autenticação não é uma coluna dessa tabela. A exportação SQL anexa descreve a estrutura; a exportação CSV descreve o corte de dados. Nenhuma delas deve substituir o arquivo do banco em execução.</p>
+<h3 id="frontend">Frontend</h3>
+<table>
+<thead>
+<tr>
+<th>Arquivo/função</th>
+<th>Responsabilidade</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>frontend/index.html</code></td>
+<td>Estrutura Observatório, seis cartões, status, horário, histórico e exportação. Não possui seletor de estação nem botão Atualizar.</td>
+</tr>
+<tr>
+<td><code>frontend/style.css</code></td>
+<td>Paleta, tipografia, cartões, tabela e adaptações responsivas.</td>
+</tr>
+<tr>
+<td><code>frontend/app.js: el()</code></td>
+<td>Localiza elementos por ID.</td>
+</tr>
+<tr>
+<td><code>formatar()</code></td>
+<td>Formata números em pt-BR e apresenta ausência como travessão.</td>
+</tr>
+<tr>
+<td><code>limpar()</code></td>
+<td>Redefine dados exibidos e estado da exportação antes de preencher uma resposta válida.</td>
+</tr>
+<tr>
+<td><code>atualizar()</code></td>
+<td>Consulta a estação fixa <code>esp32-01</code>, atualiza cartões e histórico e sinaliza erro/atraso.</td>
+</tr>
+<tr>
+<td>Evento de exportação</td>
+<td>Gera CSV com BOM UTF-8, delimitador <code>;</code>, escape de aspas e CRLF.</td>
+</tr>
+<tr>
+<td><code>frontend/favicon.svg</code></td>
+<td>Mesma rosa dos ventos usada como identidade do atalho.</td>
+</tr>
+</tbody>
+</table>
+<p>A consulta ocorre ao abrir e a cada 5 s, tem timeout de 8 s e evita sobreposição com <code>ocupado</code>. A janela é de 100 registros. O status de atraso usa 30 s desde a recepção mais recente. O identificador da estação permanece na consulta e no CSV para manter o vínculo dos dados, mesmo sem um campo editável no painel.</p>
+<h3 id="iniciador-e-atalho">Iniciador e atalho</h3>
+<table>
+<thead>
+<tr>
+<th>Função/classe de <code>scripts/iniciar_estacao.py</code></th>
+<th>Responsabilidade</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>LauncherError</code>, <code>ServerState</code></td>
+<td>Representam erro de operação e os estados própria/desligada/outro serviço/não confirmada.</td>
+</tr>
+<tr>
+<td><code>origin()</code></td>
+<td>Monta a URL de loopback da porta escolhida explicitamente.</td>
+</tr>
+<tr>
+<td><code>_get_json()</code></td>
+<td>Faz consulta JSON com limite de tamanho de resposta.</td>
+</tr>
+<tr>
+<td><code>probe_server()</code></td>
+<td>Confere saúde, título e rotas esperadas, sem usar chave.</td>
+</tr>
+<tr>
+<td><code>_mutex_name()</code>, <code>startup_lock()</code></td>
+<td>Derivam o nome e controlam mutex Win32 por raiz/porta.</td>
+</tr>
+<tr>
+<td><code>validate_environment()</code></td>
+<td>Verifica arquivos e disponibilidade das dependências de execução. Não revela o conteúdo privado.</td>
+</tr>
+<tr>
+<td><code>start_server()</code></td>
+<td>Abre <code>python.exe</code> da <code>.venv</code> em console separado, com argumentos estruturados e diretório explícito.</td>
+</tr>
+<tr>
+<td><code>wait_for_server()</code></td>
+<td>Aguarda API própria, detecta encerramento e respeita o prazo de partida.</td>
+</tr>
+<tr>
+<td><code>open_panel()</code></td>
+<td>Abre o navegador e fornece o endereço em caso de falha.</td>
+</tr>
+<tr>
+<td><code>launch_station()</code></td>
+<td>Coordena reconhecimento, validação, partida e navegador.</td>
+</tr>
+<tr>
+<td><code>_console_title()</code>, <code>run_server()</code></td>
+<td>Executam o modo servidor, com título, Uvicorn e erro visível no console.</td>
+</tr>
+<tr>
+<td><code>show_error()</code>, <code>main()</code></td>
+<td>Diálogo Windows ou stderr e tratamento dos argumentos.</td>
+</tr>
+</tbody>
+</table>
+<p>Os padrões atuais são porta 8000, consulta HTTP 3 s, partida 30 s e espera do mutex 40 s. O atalho usa <code>pythonw</code>, enquanto o servidor usa console normal. <code>--porta</code> e <code>--raiz</code> permitem teste explícito, sem troca automática. Não há encerramento arbitrário de outro serviço.</p>
+<p><code>scripts/criar_atalho.ps1</code> valida os arquivos, cria a cópia versionada do ICO, preserva um atalho anterior incompatível e grava destino, argumento, pasta e ícone no Desktop. Usa COM do Windows e libera os objetos ao terminar.</p>
+<h3 id="diagnostico-backup-e-entrega">Diagnóstico, backup e entrega</h3>
+<table>
+<thead>
+<tr>
+<th>Arquivo</th>
+<th>Componentes e uso</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>scripts/monitorar_bmp280.py</code></td>
+<td><code>I2CCapturado</code> e seus métodos registram RAW/calibração; <code>monitorar()</code> executa a janela nominal de 90 s, preservando as amostras que o driver calculou e enviando dados reais à API.</td>
+</tr>
+<tr>
+<td><code>scripts/diagnosticar_bmp280.py</code></td>
+<td><code>diagnosticar()</code> testa linhas, scan, identidade e formas de leitura. Alterna HardwareI2C/SoftI2C e permanece como ferramenta histórica, não a primeira referência de reteste.</td>
+</tr>
+<tr>
+<td><code>scripts/simular.py</code></td>
+<td><code>main()</code> envia dados fictícios identificados como <code>simulador</code>, separados do painel real.</td>
+</tr>
+<tr>
+<td><code>scripts/backup_antes_arduino.py</code></td>
+<td><code>_recusar_link()</code>, <code>_percorrer()</code>, <code>_fontes()</code> e <code>_destino_seguro()</code> delimitam origem/destino; <code>_snapshot_sqlite()</code> e <code>_metadados_arquivo()</code> verificam dados; <code>criar_backup()</code> e <code>main()</code> coordenam a cópia e o manifesto.</td>
+</tr>
+<tr>
+<td><code>scripts/restaurar_flash_esp32.ps1</code></td>
+<td><code>Assert-PlainItem</code>, <code>Get-BackupImage</code> e <code>Invoke-EsptoolChecked</code> validam arquivos e executam a restauração manual conferida. Não é uma etapa normal de abrir o painel.</td>
+</tr>
+<tr>
+<td><code>scripts/empacotar.py</code></td>
+<td><code>criar_zip()</code> produz entrega de código/documentação permitida, valida integridade e evita sobrescrever um arquivo existente.</td>
+</tr>
+</tbody>
+</table>
+<p>O monitor mantém o objeto BMP após <code>ValueError</code>, ao contrário do wrapper do programa normal. Esse detalhe deve ser registrado ao comparar janelas. O <code>api_ok</code> pode ser verdadeiro mesmo com BMP nulo, porque o payload dos outros sensores foi aceito. <code>bmp_validas</code> conta antes do POST. O host precisa resetar a placa depois do monitor.</p>
+<p>O backup de manutenção inclui configurações privadas, enquanto a entrega compartilhável as exclui. A imagem da flash é obtida separadamente. A restauração exige validar as duas imagens, o dispositivo e o manifesto; não deve ser disparada só porque um cartão do painel ficou vazio.</p>
+<h3 id="testes-e-documentos">Testes e documentos</h3>
+<table>
+<thead>
+<tr>
+<th>Arquivo</th>
+<th>Casos e finalidade</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>tests/test_api.py</code></td>
+<td>5 casos de fluxo, persistência, filtros e autenticação.</td>
+</tr>
+<tr>
+<td><code>tests/test_backup_antes_arduino.py</code></td>
+<td>11 casos de integridade, snapshots/WAL, destinos e proteção de backups.</td>
+</tr>
+<tr>
+<td><code>tests/test_bmp280.py</code></td>
+<td>7 casos incluindo parametrizações de ADC inválido, vetor de compensação, calibração e timeout.</td>
+</tr>
+<tr>
+<td><code>tests/test_empacotar.py</code></td>
+<td>2 casos de conteúdo/integridade e recusa de arquivo existente.</td>
+</tr>
+<tr>
+<td><code>tests/test_iniciar_estacao.py</code></td>
+<td>21 casos incluindo parâmetros, API própria/alheia, partida, erro, mutex, navegador e Uvicorn.</td>
+</tr>
+</tbody>
+</table>
+<p>Os auxiliares <code>Relogio</code>, <code>Barramento</code> e as fixtures de isolamento evitam que testes unitários manipulem a placa real ou encerrem o servidor ativo. A contagem é 46, incluindo parametrizações; não é uma contagem de sensores ou de amostras físicas.</p>
+<p><code>README.md</code> descreve a estrutura, <code>COMO_EXECUTAR.md</code> orienta os integrantes que receberam o ZIP, <code>ATALHO_WINDOWS.md</code> explica a operação por clique e <code>CHANGELOG.md</code> registra as etapas. Os relatórios BMP preservam evidências de momentos específicos. O relatório completo integra esses materiais, sem apagar suas diferenças históricas.</p>
+<p>No código original examinado por AST, foram identificados <code>BMP280</code>, <code>conectar_bmp</code>, LDR21, DHT4, MQ34 e BMP SCL18/SDA19. Essa verificação não publicou as strings do programa original, que podiam incluir configuração privada. A pinagem de referência hoje é LDR18 e BMP SDA21/SCL22.</p>
+</article><footer class="closing">Relatório documental. Os anexos preservam o corte e as evidências utilizadas. O banco da estação continua independente deste arquivo.</footer></main></body></html>

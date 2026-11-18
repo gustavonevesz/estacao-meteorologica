@@ -1,0 +1,14 @@
+* text=auto
+
+# Dois espacos ao fim de uma linha representam quebra de linha no Markdown.
+*.md whitespace=-blank-at-eol
+
+# Evidencias e relatorios possuem manifestos SHA-256: preservar os bytes.
+/diagnosticos/referencia_bmp280_20261111/** -text -whitespace
+/relatorios/relatorio_completo_20261111/** -text -whitespace
+
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.ico binary
+*.pdf binary

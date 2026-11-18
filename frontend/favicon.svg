@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" fill="none" role="img" aria-labelledby="titulo descricao">
+  <title id="titulo">Estação Meteorológica</title>
+  <desc id="descricao">Rosa dos ventos de oito pontas, branca e verde petróleo, sem letras e com fundo transparente.</desc>
+
+  <!-- O aro é vazado: o fundo e os espaços entre as pontas são transparentes. -->
+  <circle cx="256" cy="256" r="155" stroke="#FFFFFF" stroke-width="8"/>
+  <circle cx="256" cy="256" r="155" stroke="#183B38" stroke-width="3"/>
+
+  <!-- Pontas diagonais, mais curtas, com duas facetas. -->
+  <g stroke="#183B38" stroke-width="3" stroke-linejoin="round">
+    <path d="M256 256L293 232L386 126Z" fill="#FFFFFF"/>
+    <path d="M256 256L386 126L280 219Z" fill="#183B38"/>
+    <path d="M256 256L280 293L386 386Z" fill="#FFFFFF"/>
+    <path d="M256 256L386 386L293 280Z" fill="#183B38"/>
+    <path d="M256 256L219 280L126 386Z" fill="#FFFFFF"/>
+    <path d="M256 256L126 386L232 293Z" fill="#183B38"/>
+    <path d="M256 256L232 219L126 126Z" fill="#FFFFFF"/>
+    <path d="M256 256L126 126L219 232Z" fill="#183B38"/>
+  </g>
+
+  <!-- As quatro pontas principais formam a silhueta de navegação. -->
+  <g stroke="#183B38" stroke-width="3" stroke-linejoin="round">
+    <path d="M256 28L216 216L256 256Z" fill="#FFFFFF"/>
+    <path d="M256 28L256 256L296 216Z" fill="#183B38"/>
+    <path d="M484 256L296 216L256 256Z" fill="#FFFFFF"/>
+    <path d="M484 256L256 256L296 296Z" fill="#183B38"/>
+    <path d="M256 484L296 296L256 256Z" fill="#FFFFFF"/>
+    <path d="M256 484L256 256L216 296Z" fill="#183B38"/>
+    <path d="M28 256L216 296L256 256Z" fill="#FFFFFF"/>
+    <path d="M28 256L256 256L216 216Z" fill="#183B38"/>
+  </g>
+
+  <!-- Miolo de orientação, sem iniciais ou números. -->
+  <circle cx="256" cy="256" r="22" fill="#FFFFFF" stroke="#183B38" stroke-width="4"/>
+  <circle cx="256" cy="256" r="9" fill="#183B38"/>
+</svg>

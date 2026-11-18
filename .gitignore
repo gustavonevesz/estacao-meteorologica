@@ -1,0 +1,31 @@
+.venv/
+.tools/
+__pycache__/
+.pytest_cache/
+*.pyc
+data/
+firmware/config.py
+.env
+backup_esp32/
+
+# Configuracoes locais e credenciais (manter somente os modelos).
+.env.*
+!.env.example
+
+# Bancos, memoria da placa, pacotes e logs gerados localmente.
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+*.sqlite-*
+*.sqlite3-*
+*.bin
+*.elf
+*.map
+*.zip
+*.rar
+*.7z
+*.log
+
+# Fotos importadas para diagnostico local.
+/diagnostico_bmp280_fotos/

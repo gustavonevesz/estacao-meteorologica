@@ -1,0 +1,37 @@
+{
+  "identificacao_informada_pelo_usuario": "HW-611 do professor",
+  "identificacao_eletronica_individual_comprovada": false,
+  "sda": 21,
+  "scl": 22,
+  "resumo_monitor": {
+    "inicializacoes": 1,
+    "ciclos": 18,
+    "bmp_validas": 0,
+    "api_enviadas": 18,
+    "duracao_real_ms": 90001
+  },
+  "adc_t_observados": [
+    0
+  ],
+  "adc_p_min": 397033,
+  "adc_p_max": 397132,
+  "id58_todas": true,
+  "cal_cache_confere_todas": true,
+  "primeiro_raw": "60f060000000",
+  "ultimo_raw": "60f140000000",
+  "log": "monitor_bmp280_20261111_141604.log",
+  "reset_host_exit_code": 0,
+  "api_apos_reset": {
+    "estacao_id": "esp32-01",
+    "luz": 0,
+    "estado": "Claro",
+    "temperatura": 23.1,
+    "umidade": 77.0,
+    "gas": 249,
+    "pressao": null,
+    "temperatura_bmp": null,
+    "bmp_conectado": false,
+    "id": 3418,
+    "recebido_em": "2026-11-11T17:17:59.969509+00:00"
+  }
+}

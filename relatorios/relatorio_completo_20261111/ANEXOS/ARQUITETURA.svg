@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="480" viewBox="0 0 1400 480" role="img" aria-labelledby="title desc">
+<title id="title">Arquitetura da estação meteorológica</title>
+<desc id="desc">Sensores são lidos pelo ESP32. A placa envia dados por Wi-Fi à API FastAPI do notebook, que grava em SQLite. O navegador consulta a API e exibe o painel. Um atalho inicia o servidor e abre o navegador.</desc>
+<defs><marker id="seta" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#183B38"/></marker></defs>
+<rect width="1400" height="480" rx="18" fill="#FFFFFF"/>
+<g font-family="Segoe UI,Arial,sans-serif" fill="#183B38">
+<rect x="15" y="56" width="480" height="388" rx="18" fill="#EDF3E9" stroke="#CAD9C9" stroke-width="2"/>
+<rect x="515" y="56" width="192" height="388" rx="18" fill="#F6F8F2" stroke="#CAD9C9" stroke-width="2"/>
+<rect x="727" y="56" width="658" height="388" rx="18" fill="#EDF3E9" stroke="#CAD9C9" stroke-width="2"/>
+<text x="38" y="35" font-size="25" font-weight="650">PLACA E SENSORES</text><text x="540" y="35" font-size="25" font-weight="650">REDE</text><text x="750" y="35" font-size="25" font-weight="650">NOTEBOOK</text>
+<rect x="38" y="119" width="170" height="242" rx="14" fill="#FFFFFF" stroke="#527F6B" stroke-width="2"/>
+<text x="58" y="155" font-size="23" font-weight="650">Sensores</text>
+<text x="58" y="199" font-size="20">DHT22</text><text x="58" y="225" font-size="17">°C / umidade</text>
+<text x="58" y="262" font-size="20">LDR / MQ-135</text><text x="58" y="288" font-size="17">luz / ADC bruto</text>
+<text x="58" y="325" font-size="20">BMP280</text><text x="58" y="349" font-size="17">°C / pressão</text>
+<rect x="258" y="151" width="211" height="177" rx="15" fill="#183B38"/>
+<text x="282" y="191" font-size="27" fill="white" font-weight="650">ESP32</text><text x="282" y="226" font-size="21" fill="white">MicroPython</text><text x="282" y="264" font-size="18" fill="#D2E1CD">Ler e validar</text><text x="282" y="291" font-size="18" fill="#D2E1CD">Montar JSON</text>
+<path d="M208 240H252" fill="none" stroke="#183B38" stroke-width="3" marker-end="url(#seta)"/>
+<rect x="539" y="171" width="143" height="136" rx="13" fill="#FFFFFF" stroke="#527F6B" stroke-width="2"/>
+<text x="562" y="210" font-size="24" font-weight="650">Wi-Fi</text><text x="558" y="245" font-size="21">POST JSON</text><text x="558" y="275" font-size="17">X-API-Key</text>
+<path d="M469 239H531M682 239H745" fill="none" stroke="#183B38" stroke-width="3" marker-end="url(#seta)"/>
+<rect x="752" y="150" width="206" height="151" rx="14" fill="#183B38"/>
+<text x="777" y="192" font-size="26" fill="white" font-weight="650">FastAPI</text><text x="777" y="227" font-size="20" fill="white">Validar e salvar</text><text x="777" y="263" font-size="19" fill="#D2E1CD">Porta 8000</text>
+<rect x="1031" y="91" width="315" height="105" rx="14" fill="#FFFFFF" stroke="#527F6B" stroke-width="2"/>
+<text x="1055" y="129" font-size="25" font-weight="650">SQLite em disco</text><text x="1055" y="166" font-size="20">data/estacao.db</text>
+<path d="M958 184H994V143H1023" fill="none" stroke="#183B38" stroke-width="3" marker-end="url(#seta)"/>
+<text x="981" y="114" font-size="16">grava / lê</text>
+<rect x="1031" y="266" width="315" height="128" rx="14" fill="#FFFFFF" stroke="#527F6B" stroke-width="2"/>
+<text x="1055" y="304" font-size="25" font-weight="650">Painel no navegador</text><text x="1055" y="340" font-size="20">GET a cada 5 segundos</text><text x="1055" y="373" font-size="19">Cartões · histórico · CSV</text>
+<path d="M1031 327H994V264H965" fill="none" stroke="#183B38" stroke-width="3" marker-end="url(#seta)"/>
+<text x="1003" y="245" font-size="16">consulta API</text>
+<rect x="752" y="347" width="206" height="66" rx="12" fill="#DBE8D5"/>
+<text x="769" y="372" font-size="19" font-weight="650">Atalho Windows</text><text x="769" y="397" font-size="16">inicia API e abre painel</text>
+<text x="39" y="419" font-size="17">Aquisição independente do navegador</text><text x="750" y="465" font-size="17">O servidor precisa estar ligado para receber e persistir novas amostras.</text>
+</g></svg>

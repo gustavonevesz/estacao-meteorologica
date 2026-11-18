@@ -1,0 +1,86 @@
+[
+  {
+    "arquivo_origem": "monitor_bmp280_20261111_133700.log",
+    "sha256_origem": "0868f033e936859cb6582d6ed5b182620c7302102793eb460017c1fad01a8a31",
+    "identificacao_contextual": "Identificacao conforme contexto anterior; nao certificada eletronicamente",
+    "inicio_monitor": {
+      "frequencia_hz": 50000,
+      "duracao_solicitada_ms": 90000,
+      "intervalo_ms": 5000,
+      "sda": 21,
+      "scl": 22
+    },
+    "fim_monitor": {
+      "inicializacoes": 1,
+      "ciclos": 18,
+      "bmp_validas": 0,
+      "api_enviadas": 18,
+      "duracao_real_ms": 90001
+    },
+    "calibracao_inicial_hex": "d46a7a633200b9946ed6d00bd513f9fff9ff8c3cf8c67017",
+    "adc_t_min": 0,
+    "adc_t_max": 0,
+    "adc_p_min": 397306,
+    "adc_p_max": 397516,
+    "primeiro_raw": "610cc0000000",
+    "ultimo_raw": "60ffa0000000",
+    "todos_id58": true,
+    "todas_calibracoes_coincidem": true
+  },
+  {
+    "arquivo_origem": "monitor_bmp280_20261111_141604.log",
+    "sha256_origem": "c5601ffa273977495b4aa2e22cf283fb24f0a02df2663b1e9a450a91f8d8abe0",
+    "identificacao_contextual": "HW-611 do professor, confirmado pelo usuario durante o teste",
+    "inicio_monitor": {
+      "frequencia_hz": 50000,
+      "duracao_solicitada_ms": 90000,
+      "intervalo_ms": 5000,
+      "sda": 21,
+      "scl": 22
+    },
+    "fim_monitor": {
+      "inicializacoes": 1,
+      "ciclos": 18,
+      "bmp_validas": 0,
+      "api_enviadas": 18,
+      "duracao_real_ms": 90001
+    },
+    "calibracao_inicial_hex": "d46a7a633200b9946ed6d00bd513f9fff9ff8c3cf8c67017",
+    "adc_t_min": 0,
+    "adc_t_max": 0,
+    "adc_p_min": 397033,
+    "adc_p_max": 397132,
+    "primeiro_raw": "60f060000000",
+    "ultimo_raw": "60f140000000",
+    "todos_id58": true,
+    "todas_calibracoes_coincidem": true
+  },
+  {
+    "arquivo_origem": "monitor_bmp280_20261111_142031.log",
+    "sha256_origem": "c4e4d30176df50bde5d8e4b928407878bd9573465f4519f37c5ef57066d686b5",
+    "identificacao_contextual": "Modulo conectado apos orientar troca para o segundo e receber pode ir",
+    "inicio_monitor": {
+      "frequencia_hz": 50000,
+      "duracao_solicitada_ms": 90000,
+      "intervalo_ms": 5000,
+      "sda": 21,
+      "scl": 22
+    },
+    "fim_monitor": {
+      "inicializacoes": 1,
+      "ciclos": 18,
+      "bmp_validas": 18,
+      "api_enviadas": 18,
+      "duracao_real_ms": 90001
+    },
+    "calibracao_inicial_hex": "266d276918fc7d9520d6d00b9f130e01f9ff8c3cf8c67017",
+    "adc_t_min": 520456,
+    "adc_t_max": 520776,
+    "adc_p_min": 393756,
+    "adc_p_max": 393861,
+    "primeiro_raw": "6028507f2480",
+    "ultimo_raw": "6021e07f1080",
+    "todos_id58": true,
+    "todas_calibracoes_coincidem": true
+  }
+]

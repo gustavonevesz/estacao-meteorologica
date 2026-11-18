@@ -1,0 +1,381 @@
+{
+  "gerado_em_utc": "2026-11-12T00:02:48.692769+00:00",
+  "algoritmo": "SHA-256",
+  "arquivos": [
+    {
+      "caminho": "ANEXOS/ARQUITETURA.svg",
+      "bytes": 4178,
+      "sha256": "791afa2f28a578bd20020f9daa94b77792eaeab6d8300b38d21d9b310455de13"
+    },
+    {
+      "caminho": "ANEXOS/CAPTURA_PAINEL.json",
+      "bytes": 227,
+      "sha256": "035b441e3b55ddaf872b9e5f963eff5746dcc08823e05f5101e5ae8ef5122fb4"
+    },
+    {
+      "caminho": "ANEXOS/CATALOGO_TECNICO.md",
+      "bytes": 12060,
+      "sha256": "e60462bb738f95ccff724028f4c296f3fdc3711f5d7d1a89d517ee76751603d2"
+    },
+    {
+      "caminho": "ANEXOS/documentos_do_projeto/ATALHO_WINDOWS.md",
+      "bytes": 6130,
+      "sha256": "5644e09a8ae87f039d57bca1b6029a41acd9f458fe885ae7ee6ce71b7891bd22"
+    },
+    {
+      "caminho": "ANEXOS/documentos_do_projeto/CHANGELOG.md",
+      "bytes": 14430,
+      "sha256": "71b1352aeaf0f70ff670d2bc90cbf69cf9cd36971b2a1b1c725f9f1e1b850779"
+    },
+    {
+      "caminho": "ANEXOS/documentos_do_projeto/COMO_EXECUTAR.md",
+      "bytes": 6357,
+      "sha256": "b324054584ee98029fa18321f7466254d7948da3fb076c795de0ff40f67105e2"
+    },
+    {
+      "caminho": "ANEXOS/documentos_do_projeto/DIAGNOSTICO_BMP280.md",
+      "bytes": 12878,
+      "sha256": "5cb46d7638942cf011419550e7d08e64b4b96e701b0d5d8d519fe254e5118a73"
+    },
+    {
+      "caminho": "ANEXOS/documentos_do_projeto/diagnosticos/referencia_bmp280_20261111/amostras_20261111_133700.jsonl",
+      "bytes": 14601,
+      "sha256": "46ab906ba97a98441c3a16431ad9f801d9155a8f9bd3c8072824afc6ff89c5e7"
+    },
+    {
+      "caminho": "ANEXOS/documentos_do_projeto/diagnosticos/referencia_bmp280_20261111/amostras_20261111_141604.jsonl",
+      "bytes": 14601,
+      "sha256": "e26c73a84884023af0b9344a78483dc2f124d33931e6c46e28344154c77e4147"
+    },
+    {
+      "caminho": "ANEXOS/documentos_do_projeto/diagnosticos/referencia_bmp280_20261111/amostras_20261111_142031.jsonl",
+      "bytes": 14293,
+      "sha256": "a57630a476150f8e5a27c03d1853ee5f4b993bc4b8db01bfb80bece931fcad9e"
+    },
+    {
+      "caminho": "ANEXOS/documentos_do_projeto/diagnosticos/referencia_bmp280_20261111/contexto_20261111_141604.json",
+      "bytes": 882,
+      "sha256": "af6a8e4cbdb06515f93f537dc399e313bb0001989ccc6871449cf2a7274aabe5"
+    },
+    {
+      "caminho": "ANEXOS/documentos_do_projeto/diagnosticos/referencia_bmp280_20261111/contexto_20261111_142031.json",
+      "bytes": 8490,
+      "sha256": "1215569599a5ce05126843dbbd2900fdb49a115661edf13675ea33a08b2f7e25"
+    },
+    {
+      "caminho": "ANEXOS/documentos_do_projeto/diagnosticos/referencia_bmp280_20261111/continuidade_banco.json",
+      "bytes": 75708,
+      "sha256": "292706996c02a3bb5be707a157b9147be76b1ba12b603abc1b078d2b89555202"
+    },
+    {
+      "caminho": "ANEXOS/documentos_do_projeto/diagnosticos/referencia_bmp280_20261111/fontes/backend/database.py",
+      "bytes": 2288,
+      "sha256": "f7270c605770e0d56600d79f03a08e3d6c429d298719509bc796c7a7ccb78580"
+    },
+    {
+      "caminho": "ANEXOS/documentos_do_projeto/diagnosticos/referencia_bmp280_20261111/fontes/backend/main.py",
+      "bytes": 3211,
+      "sha256": "f56f5b52b5c57f76876dec3c1c9b43becba6956afe954c0a93e0e6d6fee7b2d2"
+    },
+    {
+      "caminho": "ANEXOS/documentos_do_projeto/diagnosticos/referencia_bmp280_20261111/fontes/backend/schemas.py",
+      "bytes": 1396,
+      "sha256": "95b7c663237482782b2a04fd2a1b3ac165abf4e5b030e7dbbee758d8683f5fbe"
+    },
+    {
+      "caminho": "ANEXOS/documentos_do_projeto/diagnosticos/referencia_bmp280_20261111/fontes/firmware/api_client.py",
+      "bytes": 1961,
+      "sha256": "6f36172656a5ff548e53fe6015a62e53b92dc4ad8159c0866f526a07e4e6b7e7"
+    },
+    {
+      "caminho": "ANEXOS/documentos_do_projeto/diagnosticos/referencia_bmp280_20261111/fontes/firmware/main.py",
+      "bytes": 1169,
+      "sha256": "ccc106aecc18b967f339b06aed0fb83ae1f88701537b6a5ff37fde1e28287f2b"
+    },
+    {
+      "caminho": "ANEXOS/documentos_do_projeto/diagnosticos/referencia_bmp280_20261111/fontes/firmware/sensors/bmp280.py",
+      "bytes": 5467,
+      "sha256": "4f9af2324fce224698d6cbdf1efb21d78b030b7ae42f5bf1ffb196961e37115f"
+    },
+    {
+      "caminho": "ANEXOS/documentos_do_projeto/diagnosticos/referencia_bmp280_20261111/fontes/firmware/sensors/dht22.py",
+      "bytes": 763,
+      "sha256": "4f53ff964fba5de6ba4a76dd6d4d3c5500788527233bf077f0fbb85b9defa3a1"
+    },
+    {
+      "caminho": "ANEXOS/documentos_do_projeto/diagnosticos/referencia_bmp280_20261111/fontes/firmware/sensors/ldr.py",
+      "bytes": 247,
+      "sha256": "a21e009a89c705073b37e44d87f32dc89c41de21d9f5064e50c572687d7dce7f"
+    },
+    {
+      "caminho": "ANEXOS/documentos_do_projeto/diagnosticos/referencia_bmp280_20261111/fontes/firmware/sensors/mq135.py",
+      "bytes": 397,
+      "sha256": "a3f843e2a119d354765d5cadc696636741e5c0f7d443f2a9dc01936345c992a1"
+    },
+    {
+      "caminho": "ANEXOS/documentos_do_projeto/diagnosticos/referencia_bmp280_20261111/fontes/firmware/wifi.py",
+      "bytes": 482,
+      "sha256": "2104f87690705f93f8b0efe7f11fb6a200d59ae7a598790f69a24c5df463e8c2"
+    },
+    {
+      "caminho": "ANEXOS/documentos_do_projeto/diagnosticos/referencia_bmp280_20261111/fontes/frontend/app.js",
+      "bytes": 3446,
+      "sha256": "7b1b0d21a949c8154e742ddf6d44f006ea73263bf54220da576e3bf62070dc87"
+    },
+    {
+      "caminho": "ANEXOS/documentos_do_projeto/diagnosticos/referencia_bmp280_20261111/fontes/frontend/index.html",
+      "bytes": 2902,
+      "sha256": "c4c0fae542032cad65719e3ac0585f4c4d5c8255af34fc753d27eb246ad4aede"
+    },
+    {
+      "caminho": "ANEXOS/documentos_do_projeto/diagnosticos/referencia_bmp280_20261111/fontes/frontend/style.css",
+      "bytes": 2202,
+      "sha256": "d94596b6452ef1dd1a5778374ff0537783890b2feda7afea6b4a5f5203455d17"
+    },
+    {
+      "caminho": "ANEXOS/documentos_do_projeto/diagnosticos/referencia_bmp280_20261111/fontes/requirements-dev.txt",
+      "bytes": 70,
+      "sha256": "d62828843136678bd16970bb55d4e36faca279d59624d836137d49b6d2429977"
+    },
+    {
+      "caminho": "ANEXOS/documentos_do_projeto/diagnosticos/referencia_bmp280_20261111/fontes/requirements.txt",
+      "bytes": 57,
+      "sha256": "7ce2ab85b8d20bac7c9660a67bff309c6d678fb7accec572cbcdd06e7dbbd081"
+    },
+    {
+      "caminho": "ANEXOS/documentos_do_projeto/diagnosticos/referencia_bmp280_20261111/fontes/scripts/monitorar_bmp280.py",
+      "bytes": 8758,
+      "sha256": "923add613cf4bea14913e9da5d22fe211dbb43f2265a0bda546a2d76f4d6f0f3"
+    },
+    {
+      "caminho": "ANEXOS/documentos_do_projeto/diagnosticos/referencia_bmp280_20261111/leituras_desde_recuperacao.csv",
+      "bytes": 18960,
+      "sha256": "0aa58aeb061a1111b92b38add93b1e2c40f618faee702344b43a940aad90efd1"
+    },
+    {
+      "caminho": "ANEXOS/documentos_do_projeto/diagnosticos/referencia_bmp280_20261111/manifesto_sha256.json",
+      "bytes": 4696,
+      "sha256": "975d8fa2da0798daea6ee91d58047320789c5d3cfc21dc1ca16ee5d403bad65e"
+    },
+    {
+      "caminho": "ANEXOS/documentos_do_projeto/diagnosticos/referencia_bmp280_20261111/painel_142705.png",
+      "bytes": 30737,
+      "sha256": "6bb88a1ea83495064305f3109fee847e0d7583d58cc729e6387bff12d6dc1c26"
+    },
+    {
+      "caminho": "ANEXOS/documentos_do_projeto/diagnosticos/referencia_bmp280_20261111/README.md",
+      "bytes": 2947,
+      "sha256": "4184e0597dcdf75f7593ef088f070058a65d7ee00da4755c15f29df18723c53b"
+    },
+    {
+      "caminho": "ANEXOS/documentos_do_projeto/diagnosticos/referencia_bmp280_20261111/resumos_monitores.json",
+      "bytes": 2664,
+      "sha256": "a158e10ea02d5f5455a62463fca51711c810e675f01a8a15183eb19a6bd6ad87"
+    },
+    {
+      "caminho": "ANEXOS/documentos_do_projeto/README.md",
+      "bytes": 19832,
+      "sha256": "afde6d53d6cdca4b885519190f8eb9424a87384a425f27f1120210965bbb1726"
+    },
+    {
+      "caminho": "ANEXOS/documentos_do_projeto/RELATORIO_BMP280_PROFESSOR.md",
+      "bytes": 25735,
+      "sha256": "ef9f946ca97a68539ff45e18beecf8df345784fb119942fec34c69bde104eb11"
+    },
+    {
+      "caminho": "ANEXOS/documentos_do_projeto/RELATORIO_FUNCIONAMENTO_E_RECUPERACAO_BMP280.md",
+      "bytes": 29248,
+      "sha256": "ee4455735165199064d6c0a1a4e6aee18989b9b99acfb97ede4046c02cd05b93"
+    },
+    {
+      "caminho": "ANEXOS/documentos_do_projeto/TESTE_ARDUINO_BMP280.md",
+      "bytes": 10273,
+      "sha256": "5ec705761281cf2513dadfbbf71ea133a8fc43a2460583574a5409822e07c64a"
+    },
+    {
+      "caminho": "ANEXOS/ESQUEMA_DO_BANCO.sql",
+      "bytes": 438,
+      "sha256": "fdb26ad4a1bddcc1741df1be66252866decb98d165af63222ee50a13650d890c"
+    },
+    {
+      "caminho": "ANEXOS/LEITURAS_ATE_ID4564.csv",
+      "bytes": 367113,
+      "sha256": "c5968befabbac587c4435b7cb2be08116892399baaaa11635ccccd512af78e6f"
+    },
+    {
+      "caminho": "ANEXOS/PAINEL_ATUAL.png",
+      "bytes": 30960,
+      "sha256": "21d360e05e7183836cd88c410eeeaa149523460565e30578913dea393fe1e516"
+    },
+    {
+      "caminho": "ANEXOS/referencia_bmp280_20261111/amostras_20261111_133700.jsonl",
+      "bytes": 14601,
+      "sha256": "46ab906ba97a98441c3a16431ad9f801d9155a8f9bd3c8072824afc6ff89c5e7"
+    },
+    {
+      "caminho": "ANEXOS/referencia_bmp280_20261111/amostras_20261111_141604.jsonl",
+      "bytes": 14601,
+      "sha256": "e26c73a84884023af0b9344a78483dc2f124d33931e6c46e28344154c77e4147"
+    },
+    {
+      "caminho": "ANEXOS/referencia_bmp280_20261111/amostras_20261111_142031.jsonl",
+      "bytes": 14293,
+      "sha256": "a57630a476150f8e5a27c03d1853ee5f4b993bc4b8db01bfb80bece931fcad9e"
+    },
+    {
+      "caminho": "ANEXOS/referencia_bmp280_20261111/contexto_20261111_141604.json",
+      "bytes": 882,
+      "sha256": "af6a8e4cbdb06515f93f537dc399e313bb0001989ccc6871449cf2a7274aabe5"
+    },
+    {
+      "caminho": "ANEXOS/referencia_bmp280_20261111/contexto_20261111_142031.json",
+      "bytes": 8490,
+      "sha256": "1215569599a5ce05126843dbbd2900fdb49a115661edf13675ea33a08b2f7e25"
+    },
+    {
+      "caminho": "ANEXOS/referencia_bmp280_20261111/continuidade_banco.json",
+      "bytes": 75708,
+      "sha256": "292706996c02a3bb5be707a157b9147be76b1ba12b603abc1b078d2b89555202"
+    },
+    {
+      "caminho": "ANEXOS/referencia_bmp280_20261111/fontes/backend/database.py",
+      "bytes": 2288,
+      "sha256": "f7270c605770e0d56600d79f03a08e3d6c429d298719509bc796c7a7ccb78580"
+    },
+    {
+      "caminho": "ANEXOS/referencia_bmp280_20261111/fontes/backend/main.py",
+      "bytes": 3211,
+      "sha256": "f56f5b52b5c57f76876dec3c1c9b43becba6956afe954c0a93e0e6d6fee7b2d2"
+    },
+    {
+      "caminho": "ANEXOS/referencia_bmp280_20261111/fontes/backend/schemas.py",
+      "bytes": 1396,
+      "sha256": "95b7c663237482782b2a04fd2a1b3ac165abf4e5b030e7dbbee758d8683f5fbe"
+    },
+    {
+      "caminho": "ANEXOS/referencia_bmp280_20261111/fontes/firmware/api_client.py",
+      "bytes": 1961,
+      "sha256": "6f36172656a5ff548e53fe6015a62e53b92dc4ad8159c0866f526a07e4e6b7e7"
+    },
+    {
+      "caminho": "ANEXOS/referencia_bmp280_20261111/fontes/firmware/main.py",
+      "bytes": 1169,
+      "sha256": "ccc106aecc18b967f339b06aed0fb83ae1f88701537b6a5ff37fde1e28287f2b"
+    },
+    {
+      "caminho": "ANEXOS/referencia_bmp280_20261111/fontes/firmware/sensors/bmp280.py",
+      "bytes": 5467,
+      "sha256": "4f9af2324fce224698d6cbdf1efb21d78b030b7ae42f5bf1ffb196961e37115f"
+    },
+    {
+      "caminho": "ANEXOS/referencia_bmp280_20261111/fontes/firmware/sensors/dht22.py",
+      "bytes": 763,
+      "sha256": "4f53ff964fba5de6ba4a76dd6d4d3c5500788527233bf077f0fbb85b9defa3a1"
+    },
+    {
+      "caminho": "ANEXOS/referencia_bmp280_20261111/fontes/firmware/sensors/ldr.py",
+      "bytes": 247,
+      "sha256": "a21e009a89c705073b37e44d87f32dc89c41de21d9f5064e50c572687d7dce7f"
+    },
+    {
+      "caminho": "ANEXOS/referencia_bmp280_20261111/fontes/firmware/sensors/mq135.py",
+      "bytes": 397,
+      "sha256": "a3f843e2a119d354765d5cadc696636741e5c0f7d443f2a9dc01936345c992a1"
+    },
+    {
+      "caminho": "ANEXOS/referencia_bmp280_20261111/fontes/firmware/wifi.py",
+      "bytes": 482,
+      "sha256": "2104f87690705f93f8b0efe7f11fb6a200d59ae7a598790f69a24c5df463e8c2"
+    },
+    {
+      "caminho": "ANEXOS/referencia_bmp280_20261111/fontes/frontend/app.js",
+      "bytes": 3446,
+      "sha256": "7b1b0d21a949c8154e742ddf6d44f006ea73263bf54220da576e3bf62070dc87"
+    },
+    {
+      "caminho": "ANEXOS/referencia_bmp280_20261111/fontes/frontend/index.html",
+      "bytes": 2902,
+      "sha256": "c4c0fae542032cad65719e3ac0585f4c4d5c8255af34fc753d27eb246ad4aede"
+    },
+    {
+      "caminho": "ANEXOS/referencia_bmp280_20261111/fontes/frontend/style.css",
+      "bytes": 2202,
+      "sha256": "d94596b6452ef1dd1a5778374ff0537783890b2feda7afea6b4a5f5203455d17"
+    },
+    {
+      "caminho": "ANEXOS/referencia_bmp280_20261111/fontes/requirements-dev.txt",
+      "bytes": 70,
+      "sha256": "d62828843136678bd16970bb55d4e36faca279d59624d836137d49b6d2429977"
+    },
+    {
+      "caminho": "ANEXOS/referencia_bmp280_20261111/fontes/requirements.txt",
+      "bytes": 57,
+      "sha256": "7ce2ab85b8d20bac7c9660a67bff309c6d678fb7accec572cbcdd06e7dbbd081"
+    },
+    {
+      "caminho": "ANEXOS/referencia_bmp280_20261111/fontes/scripts/monitorar_bmp280.py",
+      "bytes": 8758,
+      "sha256": "923add613cf4bea14913e9da5d22fe211dbb43f2265a0bda546a2d76f4d6f0f3"
+    },
+    {
+      "caminho": "ANEXOS/referencia_bmp280_20261111/leituras_desde_recuperacao.csv",
+      "bytes": 18960,
+      "sha256": "0aa58aeb061a1111b92b38add93b1e2c40f618faee702344b43a940aad90efd1"
+    },
+    {
+      "caminho": "ANEXOS/referencia_bmp280_20261111/manifesto_sha256.json",
+      "bytes": 4696,
+      "sha256": "975d8fa2da0798daea6ee91d58047320789c5d3cfc21dc1ca16ee5d403bad65e"
+    },
+    {
+      "caminho": "ANEXOS/referencia_bmp280_20261111/painel_142705.png",
+      "bytes": 30737,
+      "sha256": "6bb88a1ea83495064305f3109fee847e0d7583d58cc729e6387bff12d6dc1c26"
+    },
+    {
+      "caminho": "ANEXOS/referencia_bmp280_20261111/README.md",
+      "bytes": 2947,
+      "sha256": "4184e0597dcdf75f7593ef088f070058a65d7ee00da4755c15f29df18723c53b"
+    },
+    {
+      "caminho": "ANEXOS/referencia_bmp280_20261111/resumos_monitores.json",
+      "bytes": 2664,
+      "sha256": "a158e10ea02d5f5455a62463fca51711c810e675f01a8a15183eb19a6bd6ad87"
+    },
+    {
+      "caminho": "ANEXOS/RESUMO_DO_BANCO.json",
+      "bytes": 5311,
+      "sha256": "55f83339afc6446c24c1f021e37f4ad4a83b882a3f4c57770efa8367c63b59db"
+    },
+    {
+      "caminho": "ANEXOS/ROSA_DOS_VENTOS.png",
+      "bytes": 44125,
+      "sha256": "fa2c1c61ebe001bb364dd63a34b1ac0a6904e4f0dcec4b53882f06de39d9c475"
+    },
+    {
+      "caminho": "ANEXOS/ROSA_DOS_VENTOS.svg",
+      "bytes": 1946,
+      "sha256": "530765095c26933fe929c2c4633d6dd610479223d4ebb2c8c5018784fedf5875"
+    },
+    {
+      "caminho": "LEIA_PRIMEIRO.txt",
+      "bytes": 887,
+      "sha256": "58a212b45940468c77a1c443ec78d34e82a3d2019e392d7b54c30e832937e38f"
+    },
+    {
+      "caminho": "RELATORIO_COMPLETO_DO_PROJETO.html",
+      "bytes": 81138,
+      "sha256": "d4d618db444622e84ed1366e30c48f6e7e886dbe2fee7ce246a11ecfdb3875d4"
+    },
+    {
+      "caminho": "RELATORIO_COMPLETO_DO_PROJETO.md",
+      "bytes": 59063,
+      "sha256": "1aa5d6abe18dd807a0a24fcec719e0b35c7dbcf9f13956e660361b94dcfe7f59"
+    },
+    {
+      "caminho": "RELATORIO_COMPLETO_DO_PROJETO.pdf",
+      "bytes": 700385,
+      "sha256": "268c12edce6d7adde0e196cc9a3de5627f20dee3e248c538846b1474785e3c3d"
+    }
+  ]
+}
