@@ -1,5 +1,7 @@
 # Estação meteorológica com ESP32
 
+Link do Vídeo no Google Drive: https://drive.google.com/file/d/14P2Vyd-QI_N05kfTVQs-TSuEsLKY24KI/view?usp=drivesdk
+
 Pasta atual neste notebook: `C:\Users\Windows\computer-science\estacao-meteorologica`. O atalho da área de trabalho usa esta instalação.
 
 Projeto reorganizado a partir do arquivo `main.py.py` fornecido. O original foi mantido em `backup_esp32/main_original_esp32.py`. O firmware continua em **MicroPython**; o FastAPI roda em **Python no computador**, e o navegador exibe o painel. O VS Code é o editor dos dois ambientes.
